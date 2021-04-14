@@ -135,6 +135,24 @@ body {
     font-size: .9rem;
 }
 
+.header-top .lang_top-menu a {
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    right: 58px;
+    font-size: .9rem;
+}
+
+.header-top .lang_top-menu a:hover {
+    color: #FFF !important;
+    text-decoration: none;
+}
+
+.header-top .lang_top-menu a span {
+    padding-right: 5px;
+    text-decoration: underline;
+}
+
 
 /*header-bottom*/
 
@@ -212,6 +230,11 @@ header .navbar {
     position: relative;
     line-height: 2.5rem;
     padding: 0;
+}
+
+.navbar-light .navbar-nav .sale-link {
+    color: #76090c !important;
+    font-weight: 600;
 }
 
 .navbar-light .navbar-nav .nav-link.all-brands {
@@ -971,7 +994,8 @@ figure.containerZoom.active {
 }
 
 .availability {
-    color: #920000;
+    color: #76090c;
+    font-weight: 500;
 }
 
 .review-button {
