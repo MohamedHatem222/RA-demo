@@ -456,4 +456,6 @@ $(document).ready(function() {
     $('.image-zoom').each(function() {
         $(this).imageZoom({ zoom: 200 });
     });
+
+    $(".image-zoomer").pinchzoomer();
 });
