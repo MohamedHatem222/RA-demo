@@ -34,7 +34,7 @@
             getWidthFrom: '',
             widthFromWrapper: true, // works only when .getWidthFrom is empty
             responsiveWidth: false,
-            zIndex: '9999'
+            zIndex: '99'
         },
         $window = $(window),
         $document = $(document),

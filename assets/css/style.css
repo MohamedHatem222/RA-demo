@@ -1135,6 +1135,8 @@ figure.containerZoom.active {
 
 .click-order-btn .btn {
     padding: .5rem .75rem;
+    text-decoration: none;
+    color: #FFF !important;
 }
 
 .click-order-btn i {
