@@ -456,4 +456,75 @@ $(document).ready(function() {
     $('.image-zoom').each(function() {
         $(this).imageZoom({ zoom: 200 });
     });
+
+    //payment slider
+    $('.payment-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        swipeToSlide: true,
+        arrows: true,
+        infinite: false,
+
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    //my-items slider
+    $('.my-items-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        swipeToSlide: true,
+        arrows: true,
+        infinite: false,
+
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });

@@ -55,6 +55,9 @@
         padding: .375rem 0;
         padding-left: 20px;
     }
+    .my-items-slider .my-items-name h5 {
+        width: 300px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -78,6 +81,9 @@
     }
     .menu-img {
         display: none;
+    }
+    .my-items-slider .my-items-name h5 {
+        width: 135px;
     }
 }
 
@@ -402,6 +408,9 @@
     .copyright-inner {
         margin-bottom: 12px;
     }
+    .my-items-slider .my-items-name h5 {
+        width: 215px;
+    }
 }
 
 @media (min-width:768px) {
@@ -494,6 +503,17 @@
     .footer-row {
         padding: 0rem;
     }
+    .header-top .lang_top-menu a {
+        position: absolute;
+        right: 6px;
+    }
+    .payment-order-summary {
+        background-color: #f5f5f5;
+        padding: 5px 10px;
+    }
+    .my-items-slider .my-items-name h5 {
+        width: 167px;
+    }
 }
 
 @media (max-width:400px) {
@@ -522,6 +542,12 @@
     .product-filter {
         padding-right: 13px !important;
     }
+    .choose-address {
+        font-size: 13px;
+    }
+    .payment-add-address {
+        font-size: 13px;
+    }
 }
 
 @media (max-width:350px) {
@@ -547,5 +573,27 @@
         left: 10px;
         color: #FFF;
         font-size: 20px;
+    }
+    .header-top .header-top-text p {
+        font-size: 8px;
+    }
+    .my-items-slider .my-items-name h5 {
+        width: 140px;
+        font-size: 18px;
+    }
+    .continue-payment .btn {
+        font-size: 14px;
+    }
+    .choose-address {
+        font-size: 11px;
+    }
+    .payment-add-address {
+        font-size: 11px;
+    }
+    .payment-cash .form-check-label {
+        font-size: 13px;
+    }
+    .payment-credit .form-check-label {
+        font-size: 13px;
     }
 }

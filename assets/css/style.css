@@ -1292,76 +1292,6 @@ figure.containerZoom.active {
 /******************************************end product page******************************************/
 
 
-/*start summery-collection*/
-
-.summery-collection {
-    padding: 110px 0;
-    background-color: #e0e0e0;
-}
-
-.summery-collection .summery-collection-title h3 {
-    text-transform: uppercase;
-    color: #000;
-    letter-spacing: 1px;
-}
-
-.summery-collection .summery-collection-title p {
-    color: #000;
-}
-
-.summery-collection .second-summery-img {
-    transform: translate(-60px, 77px);
-}
-
-
-/*end summery-collection*/
-
-
-/*start best seller*/
-
-.best-seller {
-    margin: auto;
-}
-
-.best-seller h3 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-.slider-inner {
-    padding: 20px;
-    border: 1px solid #d2d2d2;
-    /* box-shadow: inset 0px -1px 5px #CCC; */
-    width: 97% !important;
-    cursor: pointer;
-    position: relative;
-}
-
-.slider-inner:hover {
-    box-shadow: 0px 1px 5px #CCC, inset 0px 1px 5px #CCC;
-    transform: translateY(-2px);
-}
-
-.discount-bogo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #ed454e;
-    color: #FFF;
-    font-weight: 500;
-    font-size: 13px;
-    z-index: 0;
-    width: 40px;
-    height: 71px;
-    text-align: center;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 99% 100%, 50% 84%, 0 100%);
-}
-
-
-/*end best seller*/
-
-
 /*start inner product slider*/
 
 section.inner-product-slider {
@@ -1430,3 +1360,391 @@ section.inner-product-slider {
 
 
 /*end inner product slider*/
+
+
+/***********************************start checkout***************************************************/
+
+.payment-steps {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 15px;
+}
+
+.payment-steps:before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 140px);
+    height: 1px;
+    top: 50%;
+    left: 86px;
+    background-color: #ced4da;
+}
+
+.payment-steps li {
+    text-align: center;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.payment-steps-inner {
+    opacity: 0.5;
+}
+
+.payment-steps a {
+    text-decoration: none;
+    color: #000;
+}
+
+.payment-steps-inner.active-payment {
+    opacity: 1;
+}
+
+.payment-steps-inner.active-payment i {
+    color: #22aea5;
+}
+
+.payment-steps i {
+    display: block;
+    font-size: 26px;
+    padding-bottom: 3px;
+}
+
+.payment-cash {
+    padding: 20px 10px;
+    background-color: #f5f5f5;
+    margin-bottom: 16px;
+}
+
+.payment-cash .cash-icon {
+    width: 37px;
+}
+
+.payment-credit {
+    padding: 20px 10px;
+    background-color: #f5f5f5;
+}
+
+.payment-credit i {
+    font-size: 27px;
+}
+
+.return {
+    cursor: pointer;
+}
+
+.return a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 3px;
+}
+
+.confirm-payment .btn {
+    padding: 0.6rem 2.75rem !important;
+}
+
+.payment-order-summary {
+    background-color: #f5f5f5;
+    padding: 5px 50px;
+}
+
+.payment-order-summary .input-group button {
+    width: 60px;
+    padding: 7px 0 !important;
+}
+
+.payment-summary-details {
+    border-bottom: 1px solid #ced4da;
+}
+
+.payment-order-summary form {
+    border-bottom: 1px solid#ced4da;
+}
+
+.payment-total span {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.payment-product-wrapper .payment-product-img {
+    width: 100px;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.payment-product-count {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #59585B;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.basket-product-free i {
+    color: #59585B;
+}
+
+.payment-product-wrapper {
+    border-top: 1px solid #ced4da;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.payment-product-inner {
+    border-bottom: 1px solid #ced4da;
+}
+
+.payment-product-inner:last-of-type {
+    border: none;
+}
+
+.payment-slider li {
+    border: 1px solid #b1b1b1;
+    border-radius: 4px;
+    padding: 13px;
+    height: 160px;
+}
+
+.payment-slider .slick-slide {
+    margin-right: 10px;
+}
+
+.payment-default-address {
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+.payment-default-address p {
+    font-size: 14px;
+    color: #22aea5;
+    font-weight: 600;
+}
+
+.payment-default-address a span {
+    text-decoration: underline;
+}
+
+.payment-slider-inner label {
+    width: 93%;
+}
+
+.payment-slider-inner label p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.payment-slider-inner {
+    position: relative;
+}
+
+.payment-slider-inner .form-check {
+    width: 100%;
+}
+
+.payment-slider-inner .payment-edit-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.confirmation i {
+    font-size: 70px;
+}
+
+.confirmation-btns button {
+    width: 200px;
+}
+
+.confirmation-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-order-summary .payment-details .payment-product-name {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.payment-order-summary .payment-details .payment-product-name h6 {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.my-items-slider .my-items-wrapper {
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    padding: 20px 7px;
+    margin: 5px 5px;
+    background-color: #f5f5f5;
+}
+
+.my-items-slider .my-items-img img {
+    width: 100px;
+    height: auto;
+}
+
+.my-items-slider .slick-slide {
+    margin-right: 10px;
+}
+
+.my-items-slider .my-items-img {
+    position: relative;
+}
+
+.my-items-slider .my-items-img .my-items-counter {
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    width: 18px;
+    height: 18px;
+    background-color: #514f4f;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-items-slider .my-items-img .my-items-counter span {
+    font-size: 11px;
+    color: #FFF;
+}
+
+.my-items-slider .my-items-name h5 {
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.my-items-slider .del-price {
+    position: relative;
+    margin-left: 10px;
+}
+
+.my-items-slider .del-price:before {
+    content: "";
+    position: absolute;
+    background-color: rgb(136, 0, 0);
+    top: 50%;
+    right: 0;
+    width: 95%;
+    height: 1px;
+    transform: rotate(355deg) translateY(-50%);
+}
+
+#addAddress .modal-dialog {
+    max-width: 850px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.defaultslider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.defaultslider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.defaultslider {
+    background-color: #22aea5;
+}
+
+input:focus+.defaultslider {
+    box-shadow: 0 0 1px #22aea5;
+}
+
+input:checked+.defaultslider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.defaultslider.round {
+    border-radius: 34px;
+}
+
+.defaultslider.round:before {
+    border-radius: 50%;
+}
+
+.addAddress-btns .submit-btn .btn {
+    padding: 0.5rem 3.75rem;
+}
+
+.disabled {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.my-items-slider .slick-next {
+    background-color: #22aea5;
+}
+
+.my-items-slider .slick-next:before {
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #FFF;
+}
+
+.my-items-slider .slick-prev {
+    background-color: #22aea5;
+}
+
+.my-items-slider .slick-prev:before {
+    content: "\f0d9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #FFF;
+}
+
+
+/***********************************end checkout***************************************************/
