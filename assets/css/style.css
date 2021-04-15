@@ -1726,6 +1726,7 @@ input:checked+.defaultslider:before {
 
 .my-items-slider .slick-next {
     background-color: #22aea5;
+    border-radius: 2px;
 }
 
 .my-items-slider .slick-next:before {
@@ -1737,9 +1738,34 @@ input:checked+.defaultslider:before {
 
 .my-items-slider .slick-prev {
     background-color: #22aea5;
+    border-radius: 2px;
 }
 
 .my-items-slider .slick-prev:before {
+    content: "\f0d9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #FFF;
+}
+
+.payment-slider .slick-next {
+    background-color: #22aea5;
+    border-radius: 2px;
+}
+
+.payment-slider .slick-next:before {
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #FFF;
+}
+
+.payment-slider .slick-prev {
+    background-color: #22aea5;
+    border-radius: 2px;
+}
+
+.payment-slider .slick-prev:before {
     content: "\f0d9";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
