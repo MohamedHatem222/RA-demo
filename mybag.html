@@ -764,297 +764,407 @@
                 <div class="col-12">
                     <ol class="list-unstyled d-flex flex-wrap m-0">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="mybag.html">My Basket</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Shipping</li>
+                        <li class="breadcrumb-item active" aria-current="page">My Bag</li>
                     </ol>
                 </div>
             </div>
         </div>
     </nav>
     <!--end breadcrumb-->
-    <!--start payment-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-7 col-12 mb-4">
-                <ul class="payment-steps list-unstyled d-flex justify-content-between align-items-center mb-5">
-                    <li>
-                        <div class="payment-steps-inner active-payment">
-                            <a href="checkout shipping.html">
-                                <i class="fas fa-motorcycle"></i>
-                                <span>Shipping</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="payment-steps-inner">
-                            <a href="checkout payment.html">
-                                <i class="fas fa-credit-card"></i>
-                                <span>Payment</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="payment-steps-inner">
-                            <a href="checkout confirmation.html">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Confirmation</span>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="payment">
-                    <div class="payment-title pb-2">
-                        <h4>Shipping</h4>
-                    </div>
-                    <div class="payment-address d-flex align-items-center justify-content-between pb-2">
-                        <div class="choose-address">
-                            <p class="m-0">Choose Your Delivery Address</p>
-                        </div>
-                        <div class="payment-add-address">
-                            <a href="#" data-toggle="modal" data-target="#addAddress">
-                                <i class="fas fa-plus-circle pr-1"></i> Add New Address
-                            </a>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled payment-slider">
-                        <li>
-                            <div class="payment-slider-inner d-flex justify-content-between">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="payment-sliderRadios" id="shippingRadios1" value="option1" checked>
-                                    <label class="form-check-label" for="shippingRadios1">
-                                        Cairo
-                                
-                                        <p class="payment-slidername m-1">Walid Ahmed</p>
-                                        <p class="payment-slideraddress m-1">Downtown</p>
-                                        <p class="payment-slidernumber m-1">01010000909</p>
-                                    </label>
+    <!--start my bag-->
+    <section class="basket">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="basket-wrapper mb-4">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12">
+                                    <div class="basket-img">
+                                        <img src="./assets/images/mybag-img.png" class="img-fluid" alt="">
+                                        <div class="basket-counter">
+                                            <span>x1</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="payment-edit-icon">
-                                    <i class="fas fa-edit"></i>
+                                <div class="col-md-4 col-12">
+                                    <div class="basket-product-name text-center mb-2 mt-1">
+                                        <h5 class="m-0">Crispy Choclate Sable</h5>
+                                    </div>
+                                    <div class="product-prices text-center">
+                                        <span>200 EGP</span>
+                                        <span class="product-del-price">220 EGP</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="payment-default-address d-flex align-items-center">
-                                <i class="fas fa-home pr-1"></i>
-                                <p class="m-0">This Is My Default Address</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="payment-slider-inner d-flex justify-content-between">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="payment-sliderRadios" id="shippingRadios2" value="option2">
-                                    <label class="form-check-label" for="shippingRadios2">
-                                        Giza
-                            
-                                        <p class="payment-slidername m-1">Walid Ahmed</p>
-                                        <p class="payment-slideraddress m-1">Downtown</p>
-                                        <p class="payment-slidernumber m-1">01010000909</p>
-                                    </label>
+                                <div class="col-md-2 col-12">
+                                    <div class="color-wrapper">
+                                        <div class="basket-product-color text-center">
+                                            <h5 class="m-0">Color</h5>
+                                        </div>
+                                        <div class="color-value text-center">
+                                            <span>Red</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="payment-edit-icon">
-                                    <i class="fas fa-edit"></i>
-                                </div>
-                            </div>
-                            <div class="payment-default-address d-flex align-items-center">
-                                <a href="#">
-                                    <span class="m-0">Select this as a default address</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="payment-slider-inner d-flex justify-content-between">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="payment-sliderRadios" id="shippingRadios3" value="option3">
-                                    <label class="form-check-label" for="shippingRadios3">
-                                        October
-                               
-                                        <p class="payment-slidername m-1">Walid Ahmed</p>
-                                        <p class="payment-slideraddress m-1">Downtown</p>
-                                        <p class="payment-slidernumber m-1">01010000909</p>
-                                    </label>
-                                </div>
-                                <div class="payment-edit-icon">
-                                    <i class="fas fa-edit"></i>
-                                </div>
-                            </div>
-                            <div class="payment-default-address d-flex align-items-center">
-                                <a href="#">
-                                    <span class="m-0">Select this as a default address</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="payment-slider-inner d-flex justify-content-between">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="payment-sliderRadios" id="shippingRadios4" value="option4">
-                                    <label class="form-check-label" for="shippingRadios4">
-                                        New Cairo
-                               
-                                        <p class="payment-slidername m-1">Walid Ahmed</p>
-                                        <p class="payment-slideraddress m-1">Downtown</p>
-                                        <p class="payment-slidernumber m-1">01010000909</p>
-                                    </label>
-                                </div>
-                                <div class="payment-edit-icon">
-                                    <i class="fas fa-edit"></i>
-                                </div>
-                            </div>
-                            <div class="payment-default-address d-flex align-items-center">
-                                <a href="#">
-                                    <span class="m-0">Select this as a default address</span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
 
-                    <div class="my-items-title d-flex align-items-center pb-2">
-                        <h4>My Items</h4>
-                        <span class="pl-1">(2 items)</span>
-                    </div>
-                    <div class="my-items-slider">
-                        <div class="my-items-wrapper d-flex align-items-center">
-                            <div class="my-items-img">
-                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
-                                <div class="my-items-counter">
-                                    <span>x1</span>
+                                <div class="col-md-2 col-12">
+                                    <div class="size-wrapper">
+                                        <div class="basket-product-size text-center">
+                                            <h5 class="m-0">Size</h5>
+                                        </div>
+                                        <div class="size-value text-center">
+                                            <span>40</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="my-items-details pl-3">
-                                <div class="my-items-name">
-                                    <h5>Shoes of Shoes</h5>
-                                </div>
-                                <div class="my-items-price">
-                                    <span class="original-price">500 EGP</span>
-                                    <span class="del-price">490 EGP</span>
-                                </div>
-                                <div class="my-items-size">
-                                    <span>Size: 40</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-items-wrapper d-flex align-items-center">
-                            <div class="my-items-img">
-                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
-                                <div class="my-items-counter">
-                                    <span>x1</span>
-                                </div>
-                            </div>
-                            <div class="my-items-details pl-3">
-                                <div class="my-items-name">
-                                    <h5>Shoes of Shoes</h5>
-                                </div>
-                                <div class="my-items-price">
-                                    <span class="original-price">500 EGP</span>
-                                    <span class="del-price">490 EGP</span>
-                                </div>
-                                <div class="my-items-size">
-                                    <span>Size: 40</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-items-wrapper d-flex align-items-center">
-                            <div class="my-items-img">
-                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
-                                <div class="my-items-counter">
-                                    <span>x1</span>
-                                </div>
-                            </div>
-                            <div class="my-items-details pl-3">
-                                <div class="my-items-name">
-                                    <h5>Shoes of Shoes</h5>
-                                </div>
-                                <div class="my-items-price">
-                                    <span class="original-price">500 EGP</span>
-                                    <span class="del-price">490 EGP</span>
-                                </div>
-                                <div class="my-items-size">
-                                    <span>Size: 40</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-items-wrapper d-flex align-items-center">
-                            <div class="my-items-img">
-                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
-                                <div class="my-items-counter">
-                                    <span>x1</span>
-                                </div>
-                            </div>
-                            <div class="my-items-details pl-3">
-                                <div class="my-items-name">
-                                    <h5>Shoes of Shoes</h5>
-                                </div>
-                                <div class="my-items-price">
-                                    <span class="original-price">500 EGP</span>
-                                    <span class="del-price">490 EGP</span>
-                                </div>
-                                <div class="my-items-size">
-                                    <span>Size: 40</span>
+                                <div class="col-md-1 col-12 delete-col">
+                                    <div class="basket-delete text-center">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="confirm-shipping d-flex justify-content-between align-items-center pt-5">
-                        <div class="return d-flex align-items-center font-weight-bold">
-                            <i class="fas fa-angle-double-left"></i>
-                            <a>Return To Bag</a>
+                    <div class="basket-wrapper mb-4">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12">
+                                    <div class="basket-img">
+                                        <img src="./assets/images/mybag-img.png" class="img-fluid" alt="">
+                                        <div class="basket-counter">
+                                            <span>x1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="basket-product-name text-center mb-2 mt-1">
+                                        <h5 class="m-0">Crispy Choclate Sable</h5>
+                                    </div>
+                                    <div class="product-prices text-center">
+                                        <span>200 EGP</span>
+                                        <span class="product-del-price">220 EGP</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <div class="color-wrapper">
+                                        <div class="basket-product-color text-center">
+                                            <h5 class="m-0">Color</h5>
+                                        </div>
+                                        <div class="color-value text-center">
+                                            <span>Red</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-12">
+                                    <div class="size-wrapper">
+                                        <div class="basket-product-size text-center">
+                                            <h5 class="m-0">Size</h5>
+                                        </div>
+                                        <div class="size-value text-center">
+                                            <span>40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-12 delete-col">
+                                    <div class="basket-delete text-center">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="continue-payment">
-                            <a href="checkout payment.html" class="btn btn-primary">Continue To Payment</a>
+                    </div>
+                    <div class="basket-wrapper mb-4">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12">
+                                    <div class="basket-img">
+                                        <img src="./assets/images/mybag-img.png" class="img-fluid" alt="">
+                                        <div class="basket-counter">
+                                            <span>x1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="basket-product-name text-center mb-2 mt-1">
+                                        <h5 class="m-0">Crispy Choclate Sable</h5>
+                                    </div>
+                                    <div class="product-prices text-center">
+                                        <span>200 EGP</span>
+                                        <span class="product-del-price">220 EGP</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <div class="color-wrapper">
+                                        <div class="basket-product-color text-center">
+                                            <h5 class="m-0">Color</h5>
+                                        </div>
+                                        <div class="color-value text-center">
+                                            <span>Red</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-12">
+                                    <div class="size-wrapper">
+                                        <div class="basket-product-size text-center">
+                                            <h5 class="m-0">Size</h5>
+                                        </div>
+                                        <div class="size-value text-center">
+                                            <span>40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-12 delete-col">
+                                    <div class="basket-delete text-center">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-wrapper mb-4">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12">
+                                    <div class="basket-img">
+                                        <img src="./assets/images/mybag-img.png" class="img-fluid" alt="">
+                                        <div class="basket-counter">
+                                            <span>x1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="basket-product-name text-center mb-2 mt-1">
+                                        <h5 class="m-0">Crispy Choclate Sable</h5>
+                                    </div>
+                                    <div class="product-prices text-center">
+                                        <span>200 EGP</span>
+                                        <span class="product-del-price">220 EGP</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <div class="color-wrapper">
+                                        <div class="basket-product-color text-center">
+                                            <h5 class="m-0">Color</h5>
+                                        </div>
+                                        <div class="color-value text-center">
+                                            <span>Red</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-12">
+                                    <div class="size-wrapper">
+                                        <div class="basket-product-size text-center">
+                                            <h5 class="m-0">Size</h5>
+                                        </div>
+                                        <div class="size-value text-center">
+                                            <span>40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-12 delete-col">
+                                    <div class="basket-delete text-center">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-wrapper mb-4">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12">
+                                    <div class="basket-img">
+                                        <img src="./assets/images/mybag-img.png" class="img-fluid" alt="">
+                                        <div class="basket-counter">
+                                            <span>x1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="basket-product-name text-center mb-2 mt-1">
+                                        <h5 class="m-0">Crispy Choclate Sable</h5>
+                                    </div>
+                                    <div class="product-prices text-center">
+                                        <span>200 EGP</span>
+                                        <span class="product-del-price">220 EGP</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <div class="color-wrapper">
+                                        <div class="basket-product-color text-center">
+                                            <h5 class="m-0">Color</h5>
+                                        </div>
+                                        <div class="color-value text-center">
+                                            <span>Red</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-12">
+                                    <div class="size-wrapper">
+                                        <div class="basket-product-size text-center">
+                                            <h5 class="m-0">Size</h5>
+                                        </div>
+                                        <div class="size-value text-center">
+                                            <span>40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-12 delete-col">
+                                    <div class="basket-delete text-center">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-wrapper mb-4">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12">
+                                    <div class="basket-img">
+                                        <img src="./assets/images/mybag-img.png" class="img-fluid" alt="">
+                                        <div class="basket-counter">
+                                            <span>x1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="basket-product-name text-center mb-2 mt-1">
+                                        <h5 class="m-0">Crispy Choclate Sable</h5>
+                                    </div>
+                                    <div class="product-prices text-center">
+                                        <span>200 EGP</span>
+                                        <span class="product-del-price">220 EGP</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <div class="color-wrapper">
+                                        <div class="basket-product-color text-center">
+                                            <h5 class="m-0">Color</h5>
+                                        </div>
+                                        <div class="color-value text-center">
+                                            <span>Red</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-12">
+                                    <div class="size-wrapper">
+                                        <div class="basket-product-size text-center">
+                                            <h5 class="m-0">Size</h5>
+                                        </div>
+                                        <div class="size-value text-center">
+                                            <span>40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-12 delete-col">
+                                    <div class="basket-delete text-center">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-wrapper mb-4">
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12">
+                                    <div class="basket-img">
+                                        <img src="./assets/images/mybag-img.png" class="img-fluid" alt="">
+                                        <div class="basket-counter">
+                                            <span>x1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="basket-product-name text-center mb-2 mt-1">
+                                        <h5 class="m-0">Crispy Choclate Sable</h5>
+                                    </div>
+                                    <div class="product-prices text-center">
+                                        <span>200 EGP</span>
+                                        <span class="product-del-price">220 EGP</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-12">
+                                    <div class="color-wrapper">
+                                        <div class="basket-product-color text-center">
+                                            <h5 class="m-0">Color</h5>
+                                        </div>
+                                        <div class="color-value text-center">
+                                            <span>Red</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-12">
+                                    <div class="size-wrapper">
+                                        <div class="basket-product-size text-center">
+                                            <h5 class="m-0">Size</h5>
+                                        </div>
+                                        <div class="size-value text-center">
+                                            <span>40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-12">
+                                    <div class="basket-delete text-center">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-5 col-12">
-                <div class="payment-order-summary">
-                    <div class="payment-sumary-title pt-2 pb-3">
-                        <h5>Your Order Summary</h5>
-                    </div>
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputpromo">Promo Code</label>
-                            <div class="input-group d-flex">
-                                <input type="text" class="form-control mr-3" id="exampleInputpromo">
-                                <button type="submit" class="btn btn-primary">Apply</button>
+                <div class="col-lg-4 col-12">
+                    <div class="order-summary-container">
+                        <div class="order-summary-wrapper">
+                            <div class="order-summary-details">
+                                <div class="order-summary-title pb-3 pt-3">
+                                    <h5>Order Summary</h5>
+                                </div>
+                                <div class="order-summary-inner">
+                                    <div class="item-price d-flex justify-content-between pb-3">
+                                        <span>item(s) Price:</span>
+                                        <span>800 EGP</span>
+                                    </div>
+                                    <div class="profile-discount d-flex justify-content-between pb-3">
+                                        <span>Profile Based Discount:</span>
+                                        <span>35% 20 EGP</span>
+                                    </div>
+                                    <div class="summary-total d-flex justify-content-between pt-2">
+                                        <span>Total:</span>
+                                        <span>780 EGP</span>
+                                    </div>
+                                </div>
+                                <div class="summary-delivery-within text-center py-3">
+                                    <h6>Delivered Within 48-72 Delivery hours</h6>
+                                </div>
+                                <div class="summary-delivery-note text-center py-3">
+                                    <h6>Delivered Note : Lorem ipsum dolor sit amet.</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputpay">Pay Using Points</label>
-                            <div class="input-group d-flex">
-                                <input type="text" class="form-control mr-3" id="exampleInputpay">
-                                <button type="submit" class="btn btn-primary">Pay</button>
-                            </div>
+                        <div class="summary-btn mt-4">
+                            <a href="checkout shipping.html" class="btn btn-primary btn-block">Procced To Purchase</a>
+                            <a href="index.html" class="btn btn-secondary btn-block">Continue Shopping</a>
                         </div>
-                        <p class="points pb-2">3000 point = 300 EGP</p>
-                    </form>
-                    <div class="payment-summary">
-                        <div class="payment-summary-details pt-4 pb-4">
-                            <div class="payment-price d-flex align-items-center justify-content-between">
-                                <span>Item Price(s)</span>
-                                <span>380 EGP</span>
-                            </div>
-                            <div class="payment-discount d-flex align-items-center justify-content-between">
-                                <span>Discount</span>
-                                <span>30 EGP</span>
-                            </div>
-                            <div class="payment-subtotal d-flex align-items-center justify-content-between">
-                                <span>Subtotal</span>
-                                <span>350 EGP</span>
-                            </div>
-                            <div class="payment-fees d-flex align-items-center justify-content-between">
-                                <span>Shipping Fees</span>
-                                <span>20 EGP</span>
-                            </div>
-                        </div>
-                        <div class="payment-total d-flex justify-content-between align-items-center pt-3 pb-3">
-                            <span>TOTAL</span>
-                            <span>370 EGP</span>
+                        <div class="clear-basket pt-2 text-center">
+                            <a href="#">Clear Basket</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--end payment-->
-    <!--start add address modal-->
+    </section>
+    <!--end my bag-->
+
+
+
     <!--start address modal-->
     <div class="modal fade" id="addAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

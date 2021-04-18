@@ -58,6 +58,11 @@
     .my-items-slider .my-items-name h5 {
         width: 300px;
     }
+    .basket-wrapper:before {
+        content: "";
+        position: absolute;
+        right: 87px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -182,6 +187,14 @@
     }
     .product-card:hover .product-details .btn {
         transform: translateY(0);
+    }
+    .order-summary-container {
+        position: sticky;
+        top: 150px;
+    }
+    .wizard-sticky {
+        position: sticky;
+        top: 95px;
     }
 }
 
@@ -461,6 +474,32 @@
     }
     .small-screen-slider {
         display: block;
+    }
+    .basket-wrapper:before {
+        display: none;
+    }
+    .color-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+    }
+    .size-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+    }
+    .color-value {
+        padding-left: 10px;
+        line-height: 1px;
+    }
+    .size-value {
+        padding-left: 10px;
+        line-height: 1px;
+    }
+    .basket-delete {
+        padding: 5px 0;
     }
 }
 
