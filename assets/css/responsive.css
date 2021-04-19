@@ -444,13 +444,22 @@
         padding-right: 0;
     }
     .brands-collection .collection-img.center-img {
-        padding: 0;
+        padding: 5px 0;
     }
     .brands-collection .collection-img.right-img {
         padding-left: 0;
     }
     .brands-collection .collection-btn {
         margin: 30px 0;
+    }
+    .brand-category .category-img.left-img {
+        padding-right: 0;
+    }
+    .brand-category .category-img.right-img {
+        padding-left: 0;
+    }
+    .brand-category .category-img.center-img {
+        padding: 5px 0;
     }
     #searchModal .close {
         position: absolute;
@@ -634,5 +643,8 @@
     }
     .payment-credit .form-check-label {
         font-size: 13px;
+    }
+    .auto-promotext {
+        width: 165px;
     }
 }

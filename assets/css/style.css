@@ -906,6 +906,22 @@ footer ul li a.footer-link {
     z-index: 1;
 }
 
+.discount-promotext {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-color: #FFF;
+    color: #000;
+    padding: 2px 15px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 1;
+}
+
 .product-thumbnails {
     position: absolute;
     bottom: 15px;
@@ -2273,3 +2289,231 @@ input:checked+.defaultslider:before {
 
 
 /***********************************end mybag***************************************************/
+
+
+/*********************************start brand home************************************************/
+
+.new-arrival {
+    margin: 60px 0;
+}
+
+.new-arrival-title {
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+.new-arrival-slider .slick-slide {
+    padding: 0 13px;
+}
+
+.new-arrival .slick-list {
+    padding: 10px 0;
+}
+
+.new-arrival .slick-next:before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #000;
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+.new-arrival .slick-prev:before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #000;
+}
+
+.shopby-collection-slider .img-wrapper {
+    padding: 0 11px;
+}
+
+.shopby-collection-slider .slick-next {
+    background-color: #22aea5;
+    border-radius: 2px;
+    right: 0;
+    color: #FFF;
+    width: 28px;
+    height: 30px;
+}
+
+.shopby-collection-slider .slick-prev {
+    background-color: #22aea5;
+    border-radius: 2px;
+    left: 0;
+    color: #FFF;
+    width: 26px;
+    display: none !important;
+}
+
+.slick-next:before {
+    content: '\f30b';
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    color: #FFF;
+    padding: 10px 0;
+}
+
+.slick-prev:before {
+    content: '\f30a';
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    color: #FFF;
+    padding: 10px 0;
+}
+
+.shopby-collection-slider .slick-dots {
+    position: absolute;
+    bottom: -57px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.shopby-collection-slider .slick-dots li {
+    opacity: 0.3;
+    width: 148px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.shopby-collection-slider .slick-dots li.slick-active {
+    opacity: 1;
+}
+
+.trendy-now {
+    margin: 60px 0;
+}
+
+.trendy-now-title {
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+.trendy-now-slider .slick-slide {
+    padding: 0 13px;
+}
+
+.trendy-now .slick-list {
+    padding: 10px 0;
+}
+
+.trendy-now .slick-next:before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #000;
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+.trendy-now .slick-prev:before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #000;
+}
+
+.best-seller {
+    margin: 60px 0;
+}
+
+.best-seller-title {
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+.best-seller-slider .slick-slide {
+    padding: 0 13px;
+}
+
+.best-seller .slick-list {
+    padding: 10px 0;
+}
+
+.best-seller .slick-next:before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #000;
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+.best-seller .slick-prev:before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #000;
+}
+
+.brand-category .collection-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.brand-category .collection-btn a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.brand-category .category-img.left-img {
+    padding-right: 12px;
+}
+
+.brand-category .category-img.center-img {
+    padding: 0 6px;
+}
+
+.brand-category .category-img.right-img {
+    padding-left: 12px;
+}
+
+.category-img a {
+    position: relative;
+    display: flex;
+}
+
+.category-img:hover .category-bg {
+    opacity: 1;
+}
+
+.category-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(31, 33, 41, .8);
+    z-index: 9;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.category-bg h5 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    color: #FFF;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+/*********************************end brand home************************************************/
