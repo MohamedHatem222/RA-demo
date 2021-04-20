@@ -171,6 +171,7 @@ $(document).ready(function() {
         dots: false,
         swipeToSlide: true,
         arrows: true,
+        infinite: false,
 
         responsive: [{
                 breakpoint: 1200,
@@ -205,6 +206,7 @@ $(document).ready(function() {
         dots: false,
         swipeToSlide: true,
         arrows: true,
+        infinite: false,
 
         responsive: [{
                 breakpoint: 1200,
@@ -241,6 +243,7 @@ $(document).ready(function() {
         dots: false,
         swipeToSlide: true,
         arrows: true,
+        infinite: false,
 
         responsive: [{
                 breakpoint: 1200,
@@ -277,6 +280,7 @@ $(document).ready(function() {
         dots: false,
         swipeToSlide: true,
         arrows: true,
+        infinite: false,
 
         responsive: [{
                 breakpoint: 1200,
@@ -413,6 +417,7 @@ $(document).ready(function() {
         dots: false,
         swipeToSlide: true,
         arrows: true,
+        infinite: false,
 
         responsive: [{
                 breakpoint: 1200,
@@ -478,7 +483,7 @@ $(document).ready(function() {
     //shopby-collection slider
     $('.shopby-collection-slider').slick({
         dots: true,
-        infinite: true,
+        infinite: false,
         autoplay: false,
         autoplaySpeed: 3000,
         speed: 2000,

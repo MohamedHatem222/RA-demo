@@ -2347,8 +2347,8 @@ input:checked+.defaultslider:before {
     border-radius: 2px;
     left: 0;
     color: #FFF;
-    width: 26px;
-    display: none !important;
+    width: 28px;
+    height: 30px;
 }
 
 .slick-next:before {
@@ -2513,6 +2513,10 @@ input:checked+.defaultslider:before {
     justify-content: center;
     align-items: center;
     font-size: 30px;
+}
+
+.slick-disabled {
+    display: none !important;
 }
 
 
