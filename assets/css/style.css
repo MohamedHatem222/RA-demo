@@ -21,6 +21,14 @@ body {
     outline: none;
 }
 
+.form-control {
+    border-radius: 3px !important;
+}
+
+.btn {
+    border-radius: 3px !important;
+}
+
 .btn-primary {
     background-color: #22aea5;
     border: none;
@@ -274,7 +282,7 @@ header .navbar {
     white-space: nowrap;
     transition: .3s ease;
     position: relative;
-    color: #000;
+    color: #404041;
     letter-spacing: .04rem;
     position: relative;
     line-height: 2.5rem;
@@ -287,15 +295,19 @@ header .navbar {
 }
 
 .navbar-light .navbar-nav .nav-link.all-brands {
-    color: #22aea5;
+    color: #404041;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 600;
 }
 
 .submenu-title {
-    font-size: .9rem;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     text-decoration: none;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     position: relative;
     color: #22aea5;
 }
@@ -394,7 +406,8 @@ header .navbar {
 .first-level-title {
     font-weight: 600;
     text-decoration: none;
-    color: #000;
+    color: #404041;
+    font-size: 15px;
 }
 
 .first-level-title:hover {
@@ -604,7 +617,7 @@ header .modal.show .modal-dialog {
 
 footer a {
     text-decoration: none;
-    color: #000;
+    color: #404041;
     list-style: none;
 }
 
@@ -620,7 +633,7 @@ footer .footer-title {
 }
 
 footer .footer-title h6 {
-    color: #000;
+    color: #404041;
     font-weight: 600;
 }
 
@@ -631,10 +644,15 @@ footer ul li a.footer-link {
 
 .subscribe-form-wrapper h6 {
     font-size: 14px;
+    color: #404041;
 }
 
 .subscribe-title {
     padding-bottom: 20px;
+}
+
+.subscribe-title p {
+    color: #404041;
     font-weight: 600;
 }
 
@@ -669,6 +687,7 @@ footer ul li a.footer-link {
 .copyright-inner span {
     font-size: 1rem;
     font-weight: 500;
+    color: #404041;
 }
 
 
@@ -693,6 +712,14 @@ footer ul li a.footer-link {
 .breadcrumb {
     background-color: #f1f1f1;
     padding: .5rem 1rem;
+}
+
+.breadcrumb-item {
+    font-size: 14px;
+}
+
+.breadcrumb-item a {
+    color: #404041;
 }
 
 .breadcrumb-item.active {
@@ -872,7 +899,6 @@ footer ul li a.footer-link {
     position: relative;
     overflow: hidden;
     transition: all ease .5s;
-    box-shadow: 0px 3px 7px 0px #d3d3d3;
 }
 
 .product-img-wrapper {
@@ -915,7 +941,7 @@ footer ul li a.footer-link {
     top: 15px;
     left: 0;
     background-color: #FFF;
-    color: #000;
+    color: #404041;
     padding: 2px 15px;
     text-align: center;
     white-space: nowrap;
@@ -963,6 +989,9 @@ footer ul li a.footer-link {
 
 .product-name h5 {
     width: 100%;
+    color: #404041;
+    font-weight: 400;
+    font-size: 16px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -970,6 +999,7 @@ footer ul li a.footer-link {
 
 .product-price {
     font-weight: 600;
+    color: #404041;
 }
 
 .product-prices .product-del-price {
@@ -989,8 +1019,9 @@ footer ul li a.footer-link {
 }
 
 .promotext span {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
+    color: #404041;
 }
 
 .product-details .btn {
@@ -1041,6 +1072,18 @@ figure.containerZoom.active {
 
 .right-side-product {
     padding-right: 17px;
+}
+
+.inner-product-name h3 {
+    color: #404041;
+}
+
+.vat {
+    color: #404041;
+}
+
+.inner-product-code {
+    color: #404041;
 }
 
 .inner-product-details {
@@ -1187,14 +1230,23 @@ figure.containerZoom.active {
     font-size: 13px;
 }
 
+.innerproduct-address {
+    color: #404041;
+}
+
 .click-order-details {
     border: 1px solid #ced4da;
     padding: 15px;
 }
 
+.innerproduct-discount {
+    color: #404041;
+}
+
 .inner-product-fees {
     padding-top: 15px;
     font-size: 13px;
+    color: #404041;
 }
 
 .click-order-btn {
@@ -1267,7 +1319,6 @@ figure.containerZoom.active {
 
 .description__reviews .tab-content>.tab-pane {
     padding: 30px 0;
-    text-align: center;
 }
 
 .description__reviews .nav-link {
@@ -2230,6 +2281,14 @@ input:checked+.defaultslider:before {
     right: 0;
 }
 
+.item-price {
+    color: #404041;
+}
+
+.profile-discount {
+    color: #404041;
+}
+
 .order-summary-details {
     padding: 0 12px;
 }
@@ -2242,10 +2301,12 @@ input:checked+.defaultslider:before {
 
 .summary-total {
     border-top: 1px solid #ced4da;
+    color: #404041;
 }
 
 .summary-delivery-within {
     border-top: 1px solid #ced4da;
+    color: #404041;
 }
 
 .summary-delivery-within h6 {
@@ -2254,6 +2315,7 @@ input:checked+.defaultslider:before {
 
 .summary-delivery-note {
     border-top: 1px solid #ced4da;
+    color: #404041;
 }
 
 .summary-delivery-note h6 {
@@ -2280,12 +2342,52 @@ input:checked+.defaultslider:before {
 
 .clear-basket a {
     text-decoration: underline;
+    color: #404041;
+}
+
+.basket-delete i {
+    color: #404041;
+    cursor: pointer;
 }
 
 .basket-product-name h5 {
+    font-size: 18px;
+    color: #404041;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.product-prices {
+    color: #404041;
+}
+
+.basket-product-color {
+    color: #404041;
+}
+
+.basket-product-color h5 {
+    font-size: 18px;
+}
+
+.basket-product-size {
+    color: #404041;
+}
+
+.basket-product-size h5 {
+    font-size: 18px;
+}
+
+.color-value {
+    color: #404041;
+}
+
+.size-value {
+    color: #404041;
+}
+
+.order-summary-title h5 {
+    color: #404041;
 }
 
 

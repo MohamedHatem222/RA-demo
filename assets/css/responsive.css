@@ -142,11 +142,11 @@
         transform: scaleY(1);
     }
     .submenu-title {
-        font-size: .9rem;
+        font-size: 14px;
         font-weight: 600;
         letter-spacing: 1px;
         text-decoration: none;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem !important;
         position: relative;
         color: #22aea5;
     }
@@ -158,17 +158,18 @@
         margin: 0;
     }
     .sub-menu ul li.nav-item .nav-link {
-        color: #000;
+        color: #404041;
         text-transform: capitalize;
         padding: 0;
         line-height: 30px;
         letter-spacing: 0;
-        font-size: .9rem;
+        font-size: 13px;
         overflow: hidden;
         text-overflow: ellipsis;
     }
     .product-card:hover {
         transform: scale(1.05);
+        box-shadow: 0px 3px 7px 0px #d3d3d3;
     }
     .product-thumbnails {
         position: absolute;
