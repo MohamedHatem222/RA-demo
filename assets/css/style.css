@@ -12,6 +12,10 @@ a {
     overflow: hidden
 }
 
+.zoomHolder img {
+    cursor: zoom-in !important;
+}
+
 a:hover {
     color: #22aea5 !important;
 }
