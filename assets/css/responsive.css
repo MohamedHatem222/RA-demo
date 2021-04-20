@@ -441,7 +441,7 @@
 
 @media (max-width:767px) {
     .brands-collection .collection-img.left-img {
-        padding-right: 0;
+        padding: 5px 0;
     }
     .brands-collection .collection-img.center-img {
         padding: 5px 0;
