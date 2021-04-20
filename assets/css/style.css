@@ -1970,17 +1970,23 @@ input:checked+.defaultslider:before {
 /*start wizard*/
 
 .wizard-wrapper {
-    padding: 20px 10px 0;
+    padding: 20px 0 0;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     margin-bottom: 15px;
 }
 
 .wizard-name {
     border-bottom: 1px solid #ced4da;
+    padding-left: 15px;
+    color: #404041;
 }
 
 .wizard-count {
     border-bottom: 1px solid #ced4da;
+}
+
+.wizard-count p {
+    padding-left: 15px;
 }
 
 
@@ -2016,6 +2022,10 @@ input:checked+.defaultslider:before {
     color: #FFF;
     font-weight: 600;
     position: relative;
+}
+
+.nav-pills .nav-link {
+    padding-left: 15px;
 }
 
 .nav-pills .nav-link.active:hover {
@@ -2061,6 +2071,7 @@ input:checked+.defaultslider:before {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     padding: 20px 17px;
     font-size: 15px;
+    color: #404041;
 }
 
 .wizard .shipping-address-inner p {
@@ -2112,8 +2123,16 @@ input:checked+.defaultslider:before {
     font-weight: 600;
 }
 
+.shipping-address-title h5 {
+    color: #404041;
+}
+
 .wizard .default-address-button .btn {
     padding: 0.5rem 4.75rem;
+}
+
+.table {
+    color: #404041 !important;
 }
 
 .wizard .table td {
@@ -2150,10 +2169,12 @@ input:checked+.defaultslider:before {
 
 .wizard .wizard-feedback h5 {
     font-weight: 600;
+    color: #404041;
 }
 
 .wizard .wizard-feedback p {
     font-size: 14px;
+    color: #404041;
 }
 
 .wizard .empty-feedbacks {
@@ -2184,7 +2205,7 @@ input:checked+.defaultslider:before {
 }
 
 .wizard .orders-btn {
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px !important;
 }
 
 
