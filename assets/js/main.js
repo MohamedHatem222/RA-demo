@@ -559,9 +559,9 @@ $(document).ready(function() {
     // }
 
     //zoom image
-    $('.image-zoom').each(function() {
-        $(this).imageZoom({ zoom: 200 });
-    });
+    // $('.image-zoom').each(function() {
+    //     $(this).imageZoom({ zoom: 200 });
+    // });
 
     //payment slider
     $('.payment-slider').slick({

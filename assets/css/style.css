@@ -5,6 +5,13 @@ a {
     outline: none;
 }
 
+.zoomHolder {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden
+}
+
 a:hover {
     color: #22aea5 !important;
 }
