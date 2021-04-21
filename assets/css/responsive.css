@@ -514,6 +514,13 @@
     header .modal.show .modal-dialog {
         transform: scale(1);
     }
+    /* .small-screen-slider .inner-product-image {
+        height: 487px;
+    } */
+    /* .zoomHolder img {
+        position: absolute;
+        top: 0 !important;
+    } */
 }
 
 @media (max-width:650px) {
