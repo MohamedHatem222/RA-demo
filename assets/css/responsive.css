@@ -511,6 +511,9 @@
     .basket-delete {
         padding: 5px 0;
     }
+    header .modal.show .modal-dialog {
+        transform: scale(1);
+    }
 }
 
 @media (max-width:650px) {
