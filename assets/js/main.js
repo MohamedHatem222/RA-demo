@@ -639,4 +639,8 @@ $(document).ready(function() {
             }
         ]
     });
+    //active shipping-tabs
+    // $(".shipping-tabs-wrapper").on("click", function() {
+    //     $(this).addClass("active").parent().siblings().child().removeClass("active")
+    // });
 });

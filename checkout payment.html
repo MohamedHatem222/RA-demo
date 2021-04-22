@@ -230,9 +230,9 @@
                                                                 </div>
                                                                 <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
                                                                     <div class="second-level mb-2">
-                                                                        <h6 class="submenu-title m-0">
+                                                                        <a href="listing.html" class="submenu-title m-0">
                                                                             Clothing
-                                                                        </h6>
+                                                                        </a>
                                                                         <i class="fas fa-plus plus-nav d-block d-md-block d-lg-none"></i>
                                                                     </div>
                                                                     <ul class="second-level-cat list-unstyled mb-0">
@@ -285,9 +285,9 @@
                                                                 </div>
                                                                 <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
                                                                     <div class="second-level mb-2">
-                                                                        <h6 class="submenu-title m-0">
+                                                                        <a href="listing.html" class="submenu-title m-0">
                                                                             Accessories
-                                                                        </h6>
+                                                                        </a>
                                                                         <i class="fas fa-plus plus-nav d-block d-md-block d-lg-none"></i>
                                                                     </div>
                                                                     <ul class="second-level-cat list-unstyled mb-0">
@@ -330,9 +330,9 @@
                                                                 </div>
                                                                 <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
                                                                     <div class="second-level mb-2">
-                                                                        <h6 class="submenu-title m-0">
+                                                                        <a href="listing.html" class="submenu-title m-0">
                                                                             Pro Workwear
-                                                                        </h6>
+                                                                        </a>
                                                                         <i class="fas fa-plus plus-nav d-block d-md-block d-lg-none"></i>
                                                                     </div>
                                                                     <ul class="second-level-cat list-unstyled mb-0">
@@ -779,151 +779,87 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-7 col-12 mb-4">
-                <ul class="payment-steps list-unstyled d-flex justify-content-between align-items-center mb-5">
-                    <li>
-                        <div class="payment-steps-inner">
-                            <a href="checkout shipping.html">
-                                <i class="fas fa-motorcycle"></i>
-                                <span>Shipping</span>
-                            </a>
+                <div class="shipping-tabs">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="shipping-tabs-wrapper text-center">
+                                <p class="m-0 d-block">Click & Collect</p>
+                                <span class="d-block">Collect Your Order From a store Of Your Choice</span>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="payment-steps-inner active-payment">
-                            <a href="checkout payment.html">
-                                <i class="fas fa-credit-card"></i>
-                                <span>Payment</span>
-                            </a>
+                        <div class="col-md-6 col-12">
+                            <div class="shipping-tabs-wrapper active text-center">
+                                <p class="m-0 d-block">Home Delivery</p>
+                                <span class="d-block">Get Your Product Delivered To Your Home</span>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="payment-steps-inner">
-                            <a href="checkout confirmation.html">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Confirmation</span>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="payment">
-                    <div class="payment-title pb-2">
-                        <h4>Payment</h4>
                     </div>
-                    <div class="payment-cash d-flex align-items-center justify-content-between">
-                        <div class="form-check">
-                            <label class="custom-label" for="cashRadios1">
+                </div>
+                <div class="shipping">
+                    <div class="shipping-title active d-flex align-items-center pb-2">
+                        <div class="shipping-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h5 class="m-0">Shipping</h5>
+                    </div>
+                </div>
+                <div class="payment active-payment">
+                    <div class="payment-title d-flex align-items-center">
+                        <div class="shipping-check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h5 class="m-0">Payment</h5>
+                    </div>
+                    <div class="payment-methods pt-3">
+                        <div class="payment-cash d-flex align-items-center justify-content-between">
+                            <div class="form-check">
+                                <label class="custom-label" for="cashRadios1">
                                 Cash On Delivery <span class="pl-2">( +25 EGP )</span>
                                 <input type="radio" name="creditRadios" id="cashRadios1" value="option1">
                                 <span class="checkmark"></span>
                             </label>
+                            </div>
+                            <div class="cash-icon">
+                                <img src="./assets/images/wallet (6).png" class="img-fluid" alt="">
+                            </div>
                         </div>
-                        <div class="cash-icon">
-                            <img src="./assets/images/cash-icon.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="payment-credit d-flex justify-content-between align-items-center">
-                        <div class="form-check radio-btns">
-                            <label class="custom-label" for="creditRadios1">
+                        <div class="payment-credit d-flex justify-content-between align-items-center">
+                            <div class="form-check radio-btns">
+                                <label class="custom-label" for="creditRadios1">
                                 Credit Card
                                 <input type="radio" name="creditRadios" id="creditRadios1" value="option2">
                                 <span class="checkmark"></span>
                             </label>
-                        </div>
-                        <div class="credit-icon d-flex">
-                            <i class="fab fa-cc-visa pr-2"></i>
-                            <i class="fab fa-cc-mastercard"></i>
-                        </div>
-                    </div>
-                    <div class="my-items-slider">
-                        <div class="my-items-wrapper d-flex align-items-center">
-                            <div class="my-items-img">
-                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
-                                <div class="my-items-counter">
-                                    <span>x1</span>
-                                </div>
                             </div>
-                            <div class="my-items-details pl-3">
-                                <div class="my-items-name">
-                                    <h5>Shoes of Shoes</h5>
-                                </div>
-                                <div class="my-items-price">
-                                    <span class="original-price">500 EGP</span>
-                                    <span class="del-price">490 EGP</span>
-                                </div>
-                                <div class="my-items-size">
-                                    <span>Size: 40</span>
-                                </div>
+                            <div class="credit-icon d-flex">
+                                <img src="./assets/images/visa (1).png" class="img-fluid pr-2" alt="">
+                                <img src="./assets/images/mastercard (2).png" class="img-fluid" alt="">
                             </div>
                         </div>
-                        <div class="my-items-wrapper d-flex align-items-center">
-                            <div class="my-items-img">
-                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
-                                <div class="my-items-counter">
-                                    <span>x1</span>
-                                </div>
+                        <div class="payment-wallet d-flex justify-content-between align-items-center">
+                            <div class="form-check radio-btns">
+                                <label class="custom-label" for="creditRadios1">
+                                Pay with your mobile Wallet
+                                <input type="radio" name="creditRadios" id="creditRadios1" value="option2">
+                                <span class="checkmark"></span>
+                            </label>
                             </div>
-                            <div class="my-items-details pl-3">
-                                <div class="my-items-name">
-                                    <h5>Shoes of Shoes</h5>
-                                </div>
-                                <div class="my-items-price">
-                                    <span class="original-price">500 EGP</span>
-                                    <span class="del-price">490 EGP</span>
-                                </div>
-                                <div class="my-items-size">
-                                    <span>Size: 40</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-items-wrapper d-flex align-items-center">
-                            <div class="my-items-img">
-                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
-                                <div class="my-items-counter">
-                                    <span>x1</span>
-                                </div>
-                            </div>
-                            <div class="my-items-details pl-3">
-                                <div class="my-items-name">
-                                    <h5>Shoes of Shoes</h5>
-                                </div>
-                                <div class="my-items-price">
-                                    <span class="original-price">500 EGP</span>
-                                    <span class="del-price">490 EGP</span>
-                                </div>
-                                <div class="my-items-size">
-                                    <span>Size: 40</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-items-wrapper d-flex align-items-center">
-                            <div class="my-items-img">
-                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
-                                <div class="my-items-counter">
-                                    <span>x1</span>
-                                </div>
-                            </div>
-                            <div class="my-items-details pl-3">
-                                <div class="my-items-name">
-                                    <h5>Shoes of Shoes</h5>
-                                </div>
-                                <div class="my-items-price">
-                                    <span class="original-price">500 EGP</span>
-                                    <span class="del-price">490 EGP</span>
-                                </div>
-                                <div class="my-items-size">
-                                    <span>Size: 40</span>
-                                </div>
+                            <div class="credit-icon d-flex">
+                                <img src="./assets/images/Meeza-Digital-350x197-2.png" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="confirm-shipping d-flex justify-content-between align-items-center pt-5">
-                        <div class="return d-flex align-items-center font-weight-bold">
-                            <i class="fas fa-angle-double-left"></i>
-                            <a href="mybag.html">Return To Bag</a>
+                    <div class="confirm-payment mt-4">
+                        <a href="checkout confirmation.html" class="btn btn-primary">Confirm</a>
+                    </div>
+                </div>
+                <div class="confirmation">
+                    <div class="disabled"></div>
+                    <div class="confirmation-title d-flex align-items-center">
+                        <div class="shipping-check">
+                            <i class="fas fa-check"></i>
                         </div>
-                        <div class="confirm-payment">
-                            <a href="checkout confirmation.html" class="btn btn-primary">Confirm</a>
-                        </div>
+                        <h5 class="m-0">Confirmation</h5>
                     </div>
                 </div>
             </div>
@@ -931,6 +867,68 @@
                 <div class="payment-order-summary">
                     <div class="payment-sumary-title pt-2 pb-3">
                         <h5>Your Order Summary</h5>
+                    </div>
+                    <div class="my-items-wrapper">
+                        <div class="my-items-inner d-flex align-items-center">
+                            <div class="my-items-img">
+                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                                <div class="my-items-counter">
+                                    <span>x1</span>
+                                </div>
+                            </div>
+                            <div class="my-items-details pl-4">
+                                <div class="my-items-name">
+                                    <h5>Shoes of Shoes</h5>
+                                </div>
+                                <div class="my-items-price">
+                                    <span class="original-price">500 EGP</span>
+                                    <span class="del-price">490 EGP</span>
+                                </div>
+                                <div class="my-items-size">
+                                    <span>Size: 40</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-items-inner d-flex align-items-center">
+                            <div class="my-items-img">
+                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                                <div class="my-items-counter">
+                                    <span>x1</span>
+                                </div>
+                            </div>
+                            <div class="my-items-details pl-4">
+                                <div class="my-items-name">
+                                    <h5>Shoes of Shoes</h5>
+                                </div>
+                                <div class="my-items-price">
+                                    <span class="original-price">500 EGP</span>
+                                    <span class="del-price">490 EGP</span>
+                                </div>
+                                <div class="my-items-size">
+                                    <span>Size: 40</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-items-inner d-flex align-items-center">
+                            <div class="my-items-img">
+                                <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                                <div class="my-items-counter">
+                                    <span>x1</span>
+                                </div>
+                            </div>
+                            <div class="my-items-details pl-4">
+                                <div class="my-items-name">
+                                    <h5>Shoes of Shoes</h5>
+                                </div>
+                                <div class="my-items-price">
+                                    <span class="original-price">500 EGP</span>
+                                    <span class="del-price">490 EGP</span>
+                                </div>
+                                <div class="my-items-size">
+                                    <span>Size: 40</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <form>
                         <div class="form-group">
@@ -940,26 +938,18 @@
                                 <button type="submit" class="btn btn-primary">Apply</button>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputpay">Pay Using Points</label>
-                            <div class="input-group d-flex">
-                                <input type="text" class="form-control mr-3" id="exampleInputpay">
-                                <button type="submit" class="btn btn-primary">Pay</button>
-                            </div>
-                        </div>
-                        <p class="points pb-2">3000 point = 300 EGP</p>
                     </form>
                     <div class="payment-summary">
                         <div class="payment-summary-details pt-4 pb-4">
-                            <div class="payment-price d-flex align-items-center justify-content-between">
+                            <div class="payment-price d-flex align-items-center justify-content-between pb-2">
                                 <span>Item Price(s)</span>
                                 <span>380 EGP</span>
                             </div>
-                            <div class="payment-discount d-flex align-items-center justify-content-between">
+                            <div class="payment-discount d-flex align-items-center justify-content-between pb-2">
                                 <span>Discount</span>
                                 <span>30 EGP</span>
                             </div>
-                            <div class="payment-subtotal d-flex align-items-center justify-content-between">
+                            <div class="payment-subtotal d-flex align-items-center justify-content-between pb-2">
                                 <span>Subtotal</span>
                                 <span>350 EGP</span>
                             </div>

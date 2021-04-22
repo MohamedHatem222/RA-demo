@@ -63,6 +63,10 @@
         position: absolute;
         right: 87px;
     }
+    .my-items-wrapper {
+        max-height: 31vh;
+        overflow-y: auto;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -90,6 +94,10 @@
     .my-items-slider .my-items-name h5 {
         width: 135px;
     }
+    .my-items-wrapper {
+        max-height: 52vh;
+        overflow-y: auto;
+    }
 }
 
 @media (max-width:1024px) and (min-width:992px) {
@@ -105,6 +113,13 @@
     .product-thumbnails {
         position: absolute;
         bottom: 10px;
+    }
+    .shipping-addresses {
+        max-height: 62vh;
+        overflow-y: auto;
+    }
+    .shipping-tabs-wrapper span {
+        font-size: 11px;
     }
 }
 
@@ -521,6 +536,18 @@
         position: absolute;
         top: 0 !important;
     } */
+    .shipping-addresses {
+        max-height: 62vh;
+        overflow-y: auto;
+    }
+    .shipping-tabs-wrapper {
+        margin-bottom: 15px;
+    }
+    .collect-wrapper #map {
+        width: 100%;
+        min-height: 383px;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width:650px) {
@@ -573,6 +600,9 @@
     .my-items-slider .my-items-name h5 {
         width: 167px;
     }
+    .continue-payment .btn {
+        padding: .375rem 3.75rem;
+    }
 }
 
 @media (max-width:400px) {
@@ -606,6 +636,9 @@
     }
     .payment-add-address {
         font-size: 13px;
+    }
+    .continue-payment .btn {
+        padding: .375rem 1.75rem;
     }
 }
 
@@ -657,5 +690,9 @@
     }
     .auto-promotext {
         width: 165px;
+    }
+    .my-items-wrapper {
+        max-height: 47vh;
+        overflow-y: auto;
     }
 }

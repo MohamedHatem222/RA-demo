@@ -1579,6 +1579,189 @@ section.inner-product-slider {
 
 /***********************************start checkout***************************************************/
 
+.shipping {
+    background-color: #fbfbfb;
+    padding: 20px 22px;
+    margin: 10px 0;
+    color: #404041;
+    position: relative;
+}
+
+.payment {
+    background-color: #fbfbfb;
+    padding: 20px 22px;
+    margin: 10px 0;
+    color: #404041;
+    position: relative;
+}
+
+.confirmation {
+    background-color: #fbfbfb;
+    padding: 20px 22px;
+    margin: 10px 0;
+    color: #404041;
+    position: relative;
+}
+
+.shipping-tabs-wrapper {
+    padding: 13px 10px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    color: #404041;
+    cursor: pointer;
+}
+
+.shipping-tabs-wrapper.active {
+    border: 2px solid #22aea5;
+}
+
+.shipping-tabs-wrapper p {
+    color: #404041;
+    font-size: 15px;
+}
+
+.shipping-tabs-wrapper span {
+    color: #909090;
+    font-size: 13px;
+}
+
+.shipping-title {
+    position: relative;
+}
+
+.shipping.active-shipping .shipping-title {
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.shipping-title h5 {
+    font-size: 18px;
+    color: #404041;
+    line-height: 1px;
+}
+
+.payment-title {
+    position: relative;
+}
+
+.payment.active-payment .payment-title {
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.payment-title h5 {
+    font-size: 18px;
+    color: #404041;
+    line-height: 1px;
+}
+
+.confirmation-title {
+    position: relative;
+}
+
+.confirmation.active-confirmation .confirmation-title {
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.confirmation-title h5 {
+    font-size: 18px;
+    color: #404041;
+    line-height: 1px;
+}
+
+.active-shipping .shipping-title:before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: -21px;
+    width: 106%;
+    height: 1px;
+    background-color: #ced4da;
+}
+
+.active-payment .payment-title:before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: -21px;
+    width: 106%;
+    height: 1px;
+    background-color: #ced4da;
+}
+
+.active-confirmation .confirmation-title:before {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: -21px;
+    width: 106%;
+    height: 1px;
+    background-color: #ced4da;
+}
+
+.shipping-check {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border: 1px solid #404041;
+    border-radius: 50%;
+    color: #FFF;
+    margin-right: 7px;
+    position: relative;
+}
+
+.shipping-title.active .shipping-check {
+    background-color: #22AEA5;
+    border: none;
+}
+
+.payment-title.active .shipping-check {
+    background-color: #22AEA5;
+    border: none;
+}
+
+.confirmation-title.active .shipping-check {
+    background-color: #22AEA5;
+    border: none;
+}
+
+.shipping-check i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    display: none;
+}
+
+.shipping-title.active i {
+    display: block;
+}
+
+.payment-title.active i {
+    display: block;
+}
+
+.confirmation-title.active i {
+    display: block;
+}
+
+.shipping-add-address a {
+    font-size: 13px;
+    color: #22aea5;
+}
+
+.choose-address p {
+    font-size: 13px;
+}
+
+.choose-address .see-all {
+    padding-left: 25px;
+    font-size: 12px;
+    color: #22aea5;
+    text-decoration: underline;
+}
+
 .payment-steps {
     position: relative;
     overflow: hidden;
@@ -1626,41 +1809,62 @@ section.inner-product-slider {
 }
 
 .payment-cash {
-    padding: 20px 10px;
-    background-color: #f5f5f5;
+    padding: 20px 10px 20px 0;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
     margin-bottom: 16px;
 }
 
 .payment-cash .cash-icon {
-    width: 37px;
+    max-width: 37px;
 }
 
 .payment-credit {
-    padding: 20px 10px;
-    background-color: #f5f5f5;
+    padding: 20px 10px 20px 0;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    margin-bottom: 16px;
 }
 
 .payment-credit i {
     font-size: 27px;
 }
 
+.payment-wallet {
+    padding: 20px 10px 20px 0;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+}
+
+.continue-payment {
+    color: #FFF;
+}
+
+.continue-payment .btn {
+    padding: .375rem 4.75rem;
+}
+
 .return {
+    margin-left: 5px;
     cursor: pointer;
+    font-size: 15px;
+}
+
+.return i {
+    line-height: 2px;
 }
 
 .return a {
     text-decoration: none;
-    color: #000;
+    color: #404041;
     padding-left: 3px;
 }
 
 .confirm-payment .btn {
-    padding: 0.6rem 2.75rem !important;
+    padding: 0.6rem 3.75rem !important;
 }
 
 .payment-order-summary {
     background-color: #f5f5f5;
-    padding: 5px 50px;
+    padding: 5px 25px;
+    color: #404041;
 }
 
 .payment-order-summary .input-group button {
@@ -1674,6 +1878,7 @@ section.inner-product-slider {
 
 .payment-order-summary form {
     border-bottom: 1px solid#ced4da;
+    margin-top: 18px;
 }
 
 .payment-total span {
@@ -1721,15 +1926,29 @@ section.inner-product-slider {
     border: none;
 }
 
-.payment-slider li {
-    border: 1px solid #b1b1b1;
+.shipping-addresses .shipping-address-wrapper {
+    border: 1px solid #ced4da;
     border-radius: 4px;
-    padding: 13px;
-    height: 160px;
+    padding: 15px 13px;
 }
 
-.payment-slider .slick-slide {
-    margin-right: 10px;
+.choose-address {
+    padding-left: 3px;
+}
+
+
+/* .shipping-addresses {
+    max-height: 40vh;
+    overflow-y: auto;
+} */
+
+.shipping-addresses-inner {
+    position: relative;
+    font-size: 14px;
+}
+
+.shipping-addresses-inner .form-check {
+    padding-left: 0;
 }
 
 .payment-default-address {
@@ -1738,45 +1957,53 @@ section.inner-product-slider {
 }
 
 .payment-default-address p {
-    font-size: 14px;
-    color: #22aea5;
-    font-weight: 600;
+    font-size: 13px;
+    color: #404041;
+    font-weight: 400;
+}
+
+.payment-default-address i {
+    line-height: 1px;
 }
 
 .payment-default-address a span {
     text-decoration: underline;
 }
 
-.payment-slider-inner label {
+.shipping-addresses-inner label {
     width: 93%;
 }
 
-.payment-slider-inner label p {
+.shipping-addresses-inner label p {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.payment-slider-inner {
-    position: relative;
+.shipping-addresses-inner label p.payment-slidertown {
+    font-weight: 600;
 }
 
-.payment-slider-inner .form-check {
+.shipping-addresses-inner .form-check {
     width: 100%;
 }
 
-.payment-slider-inner .payment-edit-icon {
+.shipping-addresses-inner .payment-edit-icon {
     position: absolute;
     top: 0px;
     right: 0px;
     cursor: pointer;
 }
 
-.confirmation i {
-    font-size: 70px;
+.shipping-addresses-inner .payment-edit-icon i {
+    color: #22aea5;
 }
 
-.confirmation-btns button {
+.confirmation-wrapper h5 {
+    font-size: 18px;
+}
+
+.confirmation-btns a {
     width: 200px;
 }
 
@@ -1800,27 +2027,38 @@ section.inner-product-slider {
     text-overflow: ellipsis;
 }
 
-.my-items-slider .my-items-wrapper {
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
-    padding: 20px 7px;
+.my-items-wrapper .my-items-inner {
+    padding: 20px 0;
     margin: 5px 5px;
     background-color: #f5f5f5;
+    position: relative;
 }
 
-.my-items-slider .my-items-img img {
+.my-items-wrapper .my-items-inner:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ced4da;
+}
+
+.my-items-wrapper .my-items-img img {
     width: 100px;
     height: auto;
 }
 
-.my-items-slider .slick-slide {
+.my-items-wrapper .slick-slide {
     margin-right: 10px;
 }
 
-.my-items-slider .my-items-img {
+.my-items-wrapper .my-items-img {
     position: relative;
+    border: 1px solid #22aea5;
 }
 
-.my-items-slider .my-items-img .my-items-counter {
+.my-items-wrapper .my-items-img .my-items-counter {
     position: absolute;
     top: -6px;
     right: -4px;
@@ -1833,24 +2071,38 @@ section.inner-product-slider {
     align-items: center;
 }
 
-.my-items-slider .my-items-img .my-items-counter span {
+.my-items-wrapper .my-items-img .my-items-counter span {
     font-size: 11px;
     color: #FFF;
 }
 
-.my-items-slider .my-items-name h5 {
+.my-items-wrapper {
+    max-height: 44vh;
+    overflow-y: auto
+}
+
+.my-items-wrapper .my-items-name h5 {
     width: 170px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 16px;
 }
 
-.my-items-slider .del-price {
+.my-items-wrapper .my-items-price {
+    font-size: 15px;
+}
+
+.my-items-wrapper .my-items-size {
+    font-size: 15px;
+}
+
+.my-items-wrapper .del-price {
     position: relative;
     margin-left: 10px;
 }
 
-.my-items-slider .del-price:before {
+.my-items-wrapper .del-price:before {
     content: "";
     position: absolute;
     background-color: rgb(136, 0, 0);
@@ -1939,24 +2191,24 @@ input:checked+.defaultslider:before {
     z-index: 2;
 }
 
-.my-items-slider .slick-next {
+.my-items-wrapper .slick-next {
     background-color: #22aea5;
     border-radius: 2px;
 }
 
-.my-items-slider .slick-next:before {
+.my-items-wrapper .slick-next:before {
     content: "\f0da";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #FFF;
 }
 
-.my-items-slider .slick-prev {
+.my-items-wrapper .slick-prev {
     background-color: #22aea5;
     border-radius: 2px;
 }
 
-.my-items-slider .slick-prev:before {
+.my-items-wrapper .slick-prev:before {
     content: "\f0d9";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -1985,6 +2237,10 @@ input:checked+.defaultslider:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #FFF;
+}
+
+.credit-icon img {
+    width: 38px;
 }
 
 
@@ -2678,6 +2934,56 @@ input:checked+.defaultslider:before {
 /*********************************end brand home************************************************/
 
 
+/*********************************start click & collect************************************************/
+
+.collect-wrapper {
+    background-color: #fbfbfb;
+    padding: 20px 22px;
+    margin: 10px 0;
+    color: #404041;
+    position: relative;
+}
+
+.click-addresses-inner {
+    background-color: #FFF;
+    padding: 10px;
+}
+
+.select-store {
+    font-size: 14px;
+}
+
+.use-map {
+    color: #909090;
+    font-size: 13px;
+}
+
+.custom-label p {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.collect-wrapper .checkmark {
+    position: absolute;
+    top: 9px;
+}
+
+.collect-wrapper .form-check {
+    padding-left: 0.25rem;
+}
+
+.collect-wrapper #map {
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: 1rem;
+}
+
+
+/*********************************end click & collect************************************************/
+
+
 /*******************start custom forms*************************/
 
 .custom-control-label {
@@ -2802,7 +3108,7 @@ input:checked+.defaultslider:before {
 
 .shipping .checkmark {
     position: absolute;
-    top: 12px;
+    top: 10px;
 }
 
 .payment .checkmark {
