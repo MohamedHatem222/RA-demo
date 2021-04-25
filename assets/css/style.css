@@ -336,7 +336,7 @@ header .navbar {
     text-decoration: none;
     margin-bottom: .5rem;
     position: relative;
-    color: #22aea5;
+    color: #404041;
 }
 
 .submenu-title:hover {
@@ -3083,6 +3083,10 @@ input:checked+.defaultslider:before {
     border-bottom: 1px solid #ced4da;
 }
 
+.miniCart-inner:last-child {
+    border: none;
+}
+
 .miniCart-subtotal span {
     font-weight: bold;
 }
@@ -3253,6 +3257,10 @@ input:checked+.defaultslider:before {
 .miniWishlist-inner {
     position: relative;
     border-bottom: 1px solid #ced4da;
+}
+
+.miniWishlist-inner:last-child {
+    border: none;
 }
 
 .miniWishlist-subtotal span {
