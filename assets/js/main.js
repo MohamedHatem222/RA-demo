@@ -674,7 +674,8 @@ $(document).ready(function() {
         }
     });
     //miniWishlist
-    $(".wishlist-icon").on("click", function() {
+    $(".wishlist-icon").on("click", function(e) {
+        e.stopPropagation
         $(".miniWishlist-navigation").addClass('active-miniWishlist')
     });
     $(".miniWishlist-close__nav").on("click", function() {

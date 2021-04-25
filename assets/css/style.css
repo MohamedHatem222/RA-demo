@@ -394,6 +394,7 @@ header .navbar {
     -o-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
     position: relative;
+    cursor: pointer;
 }
 
 .header .header-bottom-icons>ul>li>a>i {
