@@ -731,13 +731,13 @@
                                         <img src="./assets/images/flaticons/user.svg" alt="" class="img-fluid w-100">
                                     </a>
                                 </li>
-                                <li>
+                                <li class="wishlist-icon">
                                     <a href="#">
                                         <img src="./assets/images/flaticons/heart.svg" alt="" class="img-fluid w-100">
                                     </a>
                                 </li>
                                 <li class="cart-icon">
-                                    <a href="mybag.html">
+                                    <a href="#">
                                         <img src="./assets/images/flaticons/shopping-bag.svg" alt="" class="img-fluid w-100">
                                     </a>
                                     <div class="cart-counter">
@@ -883,8 +883,11 @@
                                         <i class="far fa-star"></i>
                                         <i class="far fa-star"></i>
                                     </div>
-                                    <div class="review-button" data-toggle="modal" data-target="#reviewModal">
+                                    <div class="add-review-button pr-3" data-toggle="modal" data-target="#reviewModal">
                                         <a href="#">+Add Review</a>
+                                    </div>
+                                    <div class="view-review">
+                                        <a href="reviews.html">View Reviews</a>
                                     </div>
                                 </div>
                             </div>
@@ -954,37 +957,37 @@
                                     <span class="color-title">White Green</span>
                                 </div>
                                 <ul class="list-unstyled d-flex flex-wrap my-2">
-                                    <li class="active">
+                                    <li class="active" style="background-color: #808080;">
                                         <a href="#">
 
                                         </a>
                                     </li>
-                                    <li>
+                                    <li style="background-color: #1EA1F8;">
                                         <a href="#">
 
                                         </a>
                                     </li>
-                                    <li>
+                                    <li style="background-color: #C3A241;">
                                         <a href="#">
 
                                         </a>
                                     </li>
-                                    <li>
+                                    <li style="background-color: #720104;">
                                         <a href="#">
 
                                         </a>
                                     </li>
-                                    <li>
+                                    <li style="background-color: #000;">
                                         <a href="#">
 
                                         </a>
                                     </li>
-                                    <li>
+                                    <li style="background-color: #114302;">
                                         <a href="#">
 
                                         </a>
                                     </li>
-                                    <li>
+                                    <li style="background-color: #FAB4AC;">
                                         <a href="#">
 
                                         </a>
@@ -992,7 +995,7 @@
                                 </ul>
                             </div>
                             <div class="inner-product-btns d-flex align-items-center mt-5 mb-2">
-                                <div class="select_qty">
+                                <div class="select_qty mr-2">
                                     <select class="form-control quantity-select bg-white">
                                         <option value="one" selected>1</option>
                                         <option value="two">2</option>
@@ -1012,10 +1015,10 @@
                             </div>
                             <div class="inner-product-delivery d-flex flex-wrap align-items-center justify-content-between">
                                 <div class="delivery-within">
-                                    <span>Delivered Within:3 working days</span>
+                                    <span>Delivered Within : 3 working days</span>
                                 </div>
                                 <div class="delivery-note">
-                                    <span>Delivery Note:Order May get delayed</span>
+                                    <span>Delivery Note : Order May get delayed</span>
                                 </div>
                             </div>
                             <div class="inner-product-icons my-1">
@@ -1057,11 +1060,11 @@
                                     Shipping Fees: 50 EGP
                                 </span>
                                 </div>
-                                <div class="innerproduct-address_wrapper d-flex flex-wrap align-items-center justify-content-between pt-1">
-                                    <div class="innerproduct-address mb-1">
+                                <div class="innerproduct-address_wrapper d-flex flex-wrap align-items-center justify-content-between">
+                                    <div class="innerproduct-address py-1">
                                         <span>Address: ff-turayf-WEWA</span>
                                     </div>
-                                    <div class="innerproduct-discount mb-1">
+                                    <div class="innerproduct-discount py-1">
                                         <i class="fas fa-gift"></i>
                                         <span>Buy This Item To Get 5.00 EGP Discount</span>
                                     </div>
@@ -1129,89 +1132,32 @@
                 <section class="description__reviews mt-3 mb-3">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+                            <a class="nav-link active" id="description-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Details</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Review</a>
+                            <a class="nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected=" false">Description</a>
                         </li>
                     </ul>
                     <div class="container">
-                        <div class="row justify-content-center">
+                        <div class="row">
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
-                                    <p class="m-0">The next generation of streetwear innovation reaches new levels. These shoes revisit the retro-tech Torsion System and create a new iteration. Torsion X, an X-shaped support bar, lets your foot move naturally for easy
+                                <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details-tab">
+                                    <p class=" details-inner m-0">The next generation of streetwear innovation reaches new levels. These shoes revisit the retro-tech Torsion System and create a new iteration. Torsion X, an X-shaped support bar, lets your foot move naturally for easy
                                         comfort. Boost cushioning adds energy return.
                                     </p>
                                 </div>
-                                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-lg-4 col-md-6 col-12">
-                                                <div class="review-wrapper d-flex align-items-center mb-3">
-                                                    <div class="review-img">
-                                                        <img src="./assets/images/male.png" class="img-fluid">
-                                                    </div>
-                                                    <div class="review-details ml-3">
-                                                        <div class="review-customer-name">
-                                                            <p class="m-0 font-weight-bold">Mohamed Hatem</p>
-                                                        </div>
-                                                        <div class="review-rate">
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                        </div>
-                                                        <div class="product-review mt-1">
-                                                            <p class="m-0">Very Good Product</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-12">
-                                                <div class="review-wrapper d-flex align-items-center mb-3">
-                                                    <div class="review-img">
-                                                        <img src="./assets/images/female.png" class="img-fluid">
-                                                    </div>
-                                                    <div class="review-details ml-3">
-                                                        <div class="review-customer-name">
-                                                            <p class="m-0 font-weight-bold">Rania Rashad</p>
-                                                        </div>
-                                                        <div class="review-rate">
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                        </div>
-                                                        <div class="product-review mt-1">
-                                                            <p class="m-0">Very Good Product</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-12 mb-3">
-                                                <div class="review-wrapper d-flex align-items-center">
-                                                    <div class="review-img">
-                                                        <img src="./assets/images/both.png" class="img-fluid">
-                                                    </div>
-                                                    <div class="review-details ml-3">
-                                                        <div class="review-customer-name">
-                                                            <p class="m-0 font-weight-bold">Mohamed Hatem Mohamed Emad Eldeen</p>
-                                                        </div>
-                                                        <div class="review-rate mt-1">
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                        </div>
-                                                        <div class="product-review mt-1">
-                                                            <p class="m-0">Very Good Product</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <ul class="description-inner">
+                                                <li>Leather sourced from farms that use regenerative agriculture practices</li>
+                                                <li>Upper and lining of ReBOTL™ fabric containing at least 50% recycled plastic</li>
+                                                <li>Lace-up style</li>
+                                                <li>GreenStride™ sole made of 75% renewable sugar cane and responsibly sourced rubber</li>
+                                                <li>Responsible Natural Rubber outsole</li>
+                                                <li>Footbed made from 70% bio-based material</li>
+                                                <li>Imported</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -2441,7 +2387,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom my-4">
+        <div class="footer-bottom py-3">
             <div class="container-fluid">
                 <div class="row footer-row">
                     <div class="col-12">
@@ -2449,7 +2395,7 @@
                             <div class="copyright-inner d-flex align-items-center">
                                 <span class="p-0 m-0">COPYRIGHT © (2021) RA Sport. All RIGHT RESERVED.POWERED BY  
                                     <a href="https://linktsp.com/">
-                                        <img src="./assets/images/link-logo.png" alt="Link Logo" class="img-fluid link-img">
+                                        <img src="./assets/images/white-link-logo.png" alt="Link Logo" class="img-fluid link-img">
                                     </a>
                                 </span>
 
@@ -2458,17 +2404,17 @@
                                 <ul class="list-unstyled d-flex align-items-center m-0">
                                     <li>
                                         <a href="#">
-                                            <i class="fab fa-cc-visa"></i>
+                                            <img src="./assets/images/visaa.png" class="img-fluid" alt="pay by visa">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fab fa-cc-mastercard"></i>
+                                            <img src="./assets/images/master.png" class="img-fluid" alt="pay by master card">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./assets/images/cash-icon.png" alt="cash icon" class="img-fluid">
+                                            <img src="./assets/images/white-cash-icon.png" alt="cash on delivery" class="img-fluid">
                                         </a>
                                     </li>
                                 </ul>
@@ -2480,6 +2426,168 @@
         </div>
     </footer>
     <!--end footer-->
+
+    <!--start miniCart-->
+    <div class="miniCart-navigation">
+        <div class="miniCart-wrapper">
+            <div class="miniCart-close__nav">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <div class="miniCart-title pb-3">
+                    <h4>Shopping Bag</h4>
+                    <p class="m-0">You Have 2 Items(s) In Your Bag</p>
+                </div>
+                <div class="miniCart-parent">
+                    <div class="miniCart-inner d-flex align-items-center py-4">
+                        <div class="miniCart-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                            <div class="my-items-counter">
+                                <span>x1</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-details pl-4">
+                            <div class="miniCart-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniCart-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniCart-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="miniCart-inner d-flex align-items-center py-4">
+                        <div class="miniCart-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                            <div class="my-items-counter">
+                                <span>x1</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-details pl-4">
+                            <div class="miniCart-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniCart-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniCart-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="miniCart-inner d-flex align-items-center py-4">
+                        <div class="miniCart-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                            <div class="my-items-counter">
+                                <span>x1</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-details pl-4">
+                            <div class="miniCart-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniCart-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniCart-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="miniCart-footer">
+                    <div class="miniCart-subtotal d-flex align-items-center py-3">
+                        <span class="pr-3">TOTAL :</span>
+                        <span>EGP 980</span>
+                    </div>
+                    <div class="miniCart-btns">
+                        <a href="mybag.html" class="btn btn-primary btn-block">View Your Basket</a>
+                        <a href="checkout shipping.html" class="btn btn-secondary btn-block">CheckOut</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end miniCart-->
+
+    <!--start miniWishlist-->
+    <div class="miniWishlist-navigation">
+        <div class="miniWishlist-wrapper">
+            <div class="miniWishlist-close__nav">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <div class="miniWishlist-title pb-3">
+                    <h4>Wishlist</h4>
+                    <p class="m-0">You Have 1 Items(s) In Your Bag</p>
+                </div>
+                <div class="miniWishlist-parent">
+                    <div class="miniWishlistt-inner d-flex align-items-center py-4">
+                        <div class="miniWishlist-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="miniWishlist-details pl-4">
+                            <div class="miniWishlist-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniWishlist-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniWishlist-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniWishlist-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="miniWishlist-inner d-flex align-items-center py-4">
+                        <div class="miniWishlist-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="miniWishlist-details pl-4">
+                            <div class="miniWishlist-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniWishlist-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniWishlist-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniWishlist-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="miniWishlist-footer">
+                    <div class="miniWishlist-btns">
+                        <a href="mybag.html" class="btn btn-primary btn-block">View Your Wishlist</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end miniWishlist-->
 
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
     <script src="./assets/js/jquery-3.4.1.min.js"></script>

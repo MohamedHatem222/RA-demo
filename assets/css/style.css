@@ -638,6 +638,11 @@ header .modal.show .modal-dialog {
     padding: 50px 0;
 }
 
+.footer-bottom {
+    background-color: #606060;
+    color: #FFF;
+}
+
 .footer-row {
     padding: 0 2rem;
 }
@@ -704,7 +709,7 @@ footer ul li a.footer-link {
 
 .footer-bottom-icons ul li a i {
     font-size: 25px;
-    color: #575759;
+    color: #FFF;
 }
 
 .copyright-inner img.link-img {
@@ -712,9 +717,8 @@ footer ul li a.footer-link {
 }
 
 .copyright-inner span {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 500;
-    color: #404041;
 }
 
 
@@ -1056,6 +1060,15 @@ footer ul li a.footer-link {
     margin-top: 10px;
 }
 
+.page-item.active .page-link {
+    background-color: #22aea5;
+    border-color: #22aea5;
+}
+
+.page-link {
+    color: #22aea5;
+}
+
 
 /*end lisiting products*/
 
@@ -1136,8 +1149,23 @@ figure.containerZoom.active {
     font-weight: 500;
 }
 
-.review-button {
+.add-review-button {
     margin-left: 10px;
+}
+
+.add-review-button a {
+    font-size: 13px;
+}
+
+.view-review {
+    margin-left: 10px;
+}
+
+.view-review a {
+    font-size: 13px;
+    color: #1EA1F8;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .review-button a {
@@ -1250,7 +1278,7 @@ figure.containerZoom.active {
 }
 
 .inner-product-delivery span {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .innerproduct-address_wrapper {
@@ -1325,6 +1353,7 @@ figure.containerZoom.active {
 /*start description*/
 
 .description__reviews {
+    border-top: 1px solid #ced4da;
     border-bottom: 1px solid #ced4da;
 }
 
@@ -1332,16 +1361,16 @@ figure.containerZoom.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #ced4da !important;
+    border-bottom: none;
 }
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
     background: none;
-    border: none;
     font-weight: bold;
     color: #22aea5 !important;
     opacity: 1;
+    border-bottom: 2px solid #ced4da;
 }
 
 .description__reviews .tab-content>.tab-pane {
@@ -1356,10 +1385,12 @@ figure.containerZoom.active {
     opacity: 0.5;
 }
 
-.description__reviews .nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover {
-    border: none;
-    background: none;
+.description-inner li {
+    color: #404041;
+}
+
+.details-inner {
+    color: #404041;
 }
 
 .review-wrapper {
@@ -2243,8 +2274,13 @@ input:checked+.defaultslider:before {
     color: #FFF;
 }
 
-.credit-icon img {
-    width: 38px;
+
+/* .credit-icon {
+    width: 55px;
+} */
+
+.meza-icon {
+    width: 55px;
 }
 
 
@@ -2986,6 +3022,403 @@ input:checked+.defaultslider:before {
 
 
 /*********************************end click & collect************************************************/
+
+
+/**********************************start miniCart************************************************/
+
+.miniCart-navigation {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1500;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.miniCart-navigation .miniCart-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    width: 420px;
+    padding: 20px 15px 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: 0.5s ease;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.miniCart-navigation .miniCart-close__nav {
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    color: #1f3755;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.miniCart-navigation.active-miniCart {
+    visibility: visible;
+    opacity: 1;
+}
+
+.miniCart-navigation.active-miniCart .miniCart-wrapper {
+    transform: translateX(0);
+}
+
+.miniCart-inner {
+    position: relative;
+    border-bottom: 1px solid #ced4da;
+}
+
+.miniCart-subtotal span {
+    font-weight: bold;
+}
+
+.miniCart-inner .miniCart-remove {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #404041;
+    cursor: pointer;
+}
+
+.miniCart-img {
+    width: 100px;
+    text-align: center;
+    position: relative;
+    display: block;
+    border: 1px solid #22aea5;
+}
+
+.miniCart-wrapper .miniCart-img .my-items-counter {
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    width: 18px;
+    height: 18px;
+    background-color: #514f4f;
+    color: #FFF;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniCart-wrapper .miniCart-img .my-items-counter span {
+    font-size: 11px;
+    color: #FFF;
+}
+
+.miniCart-parent {
+    max-height: calc(100vh - 270px);
+    overflow-y: auto;
+}
+
+.miniCart-title {
+    border-bottom: 2px solid #ced4da;
+    color: #404041;
+}
+
+.miniCart-title h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #22aea5;
+}
+
+.miniCart-title p {
+    font-size: 14px;
+    color: #404041;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
+
+.miniCart-details {
+    font-size: 16px;
+    color: #404041;
+}
+
+.miniCart-details .miniCart-price {
+    font-size: 15px;
+    color: #404041;
+}
+
+.miniCart-price .del-price {
+    position: relative;
+    margin-left: 25px;
+}
+
+.miniCart-price .del-price:before {
+    content: "";
+    position: absolute;
+    background-color: rgb(136, 0, 0);
+    top: 50%;
+    right: 0;
+    width: 95%;
+    height: 1px;
+    transform: rotate(355deg) translateY(-50%);
+}
+
+.miniCart-details .miniCart-size {
+    font-size: 15px;
+}
+
+.miniCart-details .miniCart-name h5 {
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.miniCart-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 30px 30px;
+}
+
+
+/**********************************end miniCart************************************************/
+
+
+/**********************************start miniWishlist************************************************/
+
+.miniWishlist-navigation {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1500;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.miniWishlist-navigation .miniWishlist-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    width: 420px;
+    padding: 20px 15px 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: 0.5s ease;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.miniWishlist-navigation .miniWishlist-close__nav {
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    color: #1f3755;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.miniWishlist-navigation.active-miniWishlist {
+    visibility: visible;
+    opacity: 1;
+}
+
+.miniWishlist-navigation.active-miniWishlist .miniWishlist-wrapper {
+    transform: translateX(0);
+}
+
+.miniWishlist-inner {
+    position: relative;
+    border-bottom: 1px solid #ced4da;
+}
+
+.miniWishlist-subtotal span {
+    font-weight: bold;
+}
+
+.miniWishlist-inner .miniWishlist-remove {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #404041;
+    cursor: pointer;
+}
+
+.miniWishlist-img {
+    width: 100px;
+    text-align: center;
+    position: relative;
+    display: block;
+    border: 1px solid #22aea5;
+}
+
+.miniWishlist-wrapper .miniWishlist-img .my-items-counter {
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    width: 18px;
+    height: 18px;
+    background-color: #514f4f;
+    color: #FFF;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniWishlist-wrapper .miniWishlist-img .my-items-counter span {
+    font-size: 11px;
+    color: #FFF;
+}
+
+.miniWishlist-parent {
+    max-height: calc(100vh - 270px);
+    overflow-y: auto;
+}
+
+.miniWishlist-title {
+    border-bottom: 2px solid #ced4da;
+    color: #404041;
+}
+
+.miniWishlist-title h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #22aea5;
+}
+
+.miniWishlist-title p {
+    font-size: 14px;
+    color: #404041;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
+
+.miniWishlist-details {
+    font-size: 16px;
+    color: #404041;
+}
+
+.miniWishlist-details .miniWishlist-price {
+    font-size: 15px;
+    color: #404041;
+}
+
+.miniWishlist-price .del-price {
+    position: relative;
+    margin-left: 25px;
+}
+
+.miniWishlist-price .del-price:before {
+    content: "";
+    position: absolute;
+    background-color: rgb(136, 0, 0);
+    top: 50%;
+    right: 0;
+    width: 95%;
+    height: 1px;
+    transform: rotate(355deg) translateY(-50%);
+}
+
+.miniWishlist-details .miniWishlist-size {
+    font-size: 15px;
+}
+
+.miniWishlist-details .miniWishlist-name h5 {
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.miniWishlist-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 30px 30px;
+}
+
+
+/**********************************end miniWishlist************************************************/
+
+
+/**********************************start reviews************************************************/
+
+.reviews {
+    padding: .5rem 1rem;
+}
+
+.product-review-wrapper {
+    background-color: #F5F5F5;
+    color: #404041;
+    padding: 21px;
+}
+
+.product-review-name h5 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-rate-text p {
+    font-size: 15px;
+}
+
+.customer-review-wrapper {
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    padding: 10px;
+    color: #404041;
+}
+
+.customer-reviews-title {
+    color: #404041;
+}
+
+.customer-review-text p {
+    font-size: 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Customer-name h6 {
+    font-size: 15px;
+}
+
+.customer-review-status h6 {
+    font-size: 15px;
+}
+
+
+/**********************************end reviews************************************************/
 
 
 /*******************start custom forms*************************/

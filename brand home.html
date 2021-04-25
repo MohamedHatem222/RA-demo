@@ -729,13 +729,13 @@
                                         <img src="./assets/images/flaticons/user.svg" alt="" class="img-fluid w-100">
                                     </a>
                                 </li>
-                                <li>
+                                <li class="wishlist-icon">
                                     <a href="#">
                                         <img src="./assets/images/flaticons/heart.svg" alt="" class="img-fluid w-100">
                                     </a>
                                 </li>
                                 <li class="cart-icon">
-                                    <a href="mybag.html">
+                                    <a href="#">
                                         <img src="./assets/images/flaticons/shopping-bag.svg" alt="" class="img-fluid w-100">
                                     </a>
                                     <div class="cart-counter">
@@ -1833,7 +1833,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom my-4">
+        <div class="footer-bottom py-3">
             <div class="container-fluid">
                 <div class="row footer-row">
                     <div class="col-12">
@@ -1841,7 +1841,7 @@
                             <div class="copyright-inner d-flex align-items-center">
                                 <span class="p-0 m-0">COPYRIGHT © (2021) RA Sport. All RIGHT RESERVED.POWERED BY  
                                     <a href="https://linktsp.com/">
-                                        <img src="./assets/images/link-logo.png" alt="Link Logo" class="img-fluid link-img">
+                                        <img src="./assets/images/white-link-logo.png" alt="Link Logo" class="img-fluid link-img">
                                     </a>
                                 </span>
 
@@ -1850,17 +1850,17 @@
                                 <ul class="list-unstyled d-flex align-items-center m-0">
                                     <li>
                                         <a href="#">
-                                            <i class="fab fa-cc-visa"></i>
+                                            <img src="./assets/images/visaa.png" class="img-fluid" alt="pay by visa">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fab fa-cc-mastercard"></i>
+                                            <img src="./assets/images/master.png" class="img-fluid" alt="pay by master card">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <img src="./assets/images/cash-icon.png" alt="cash icon" class="img-fluid">
+                                            <img src="./assets/images/white-cash-icon.png" alt="cash on delivery" class="img-fluid">
                                         </a>
                                     </li>
                                 </ul>
@@ -1873,6 +1873,167 @@
     </footer>
     <!--end footer-->
 
+    <!--start miniCart-->
+    <div class="miniCart-navigation">
+        <div class="miniCart-wrapper">
+            <div class="miniCart-close__nav">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <div class="miniCart-title pb-3">
+                    <h4>Shopping Bag</h4>
+                    <p class="m-0">You Have 2 Items(s) In Your Bag</p>
+                </div>
+                <div class="miniCart-parent">
+                    <div class="miniCart-inner d-flex align-items-center py-4">
+                        <div class="miniCart-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                            <div class="my-items-counter">
+                                <span>x1</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-details pl-4">
+                            <div class="miniCart-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniCart-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniCart-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="miniCart-inner d-flex align-items-center py-4">
+                        <div class="miniCart-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                            <div class="my-items-counter">
+                                <span>x1</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-details pl-4">
+                            <div class="miniCart-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniCart-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniCart-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="miniCart-inner d-flex align-items-center py-4">
+                        <div class="miniCart-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                            <div class="my-items-counter">
+                                <span>x1</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-details pl-4">
+                            <div class="miniCart-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniCart-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniCart-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniCart-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="miniCart-footer">
+                    <div class="miniCart-subtotal d-flex align-items-center py-3">
+                        <span class="pr-3">TOTAL :</span>
+                        <span>EGP 980</span>
+                    </div>
+                    <div class="miniCart-btns">
+                        <a href="mybag.html" class="btn btn-primary btn-block">View Your Basket</a>
+                        <a href="checkout shipping.html" class="btn btn-secondary btn-block">CheckOut</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end miniCart-->
+
+    <!--start miniWishlist-->
+    <div class="miniWishlist-navigation">
+        <div class="miniWishlist-wrapper">
+            <div class="miniWishlist-close__nav">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <div class="miniWishlist-title pb-3">
+                    <h4>Wishlist</h4>
+                    <p class="m-0">You Have 1 Items(s) In Your Bag</p>
+                </div>
+                <div class="miniWishlist-parent">
+                    <div class="miniWishlistt-inner d-flex align-items-center py-4">
+                        <div class="miniWishlist-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="miniWishlist-details pl-4">
+                            <div class="miniWishlist-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniWishlist-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniWishlist-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniWishlist-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="miniWishlist-inner d-flex align-items-center py-4">
+                        <div class="miniWishlist-img">
+                            <img src="./assets/images/adidas1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="miniWishlist-details pl-4">
+                            <div class="miniWishlist-name">
+                                <h5 class="m-0">Shoes of Shoes</h5>
+                            </div>
+                            <div class="miniWishlist-price py-2">
+                                <span class="original-price">500 EGP</span>
+                                <span class="del-price">490 EGP</span>
+                            </div>
+                            <div class="miniWishlist-size">
+                                <span>Size: 40</span>
+                            </div>
+                        </div>
+                        <div class="miniWishlist-remove">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="miniWishlist-footer">
+                    <div class="miniWishlist-btns">
+                        <a href="mybag.html" class="btn btn-primary btn-block">View Your Wishlist</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end miniWishlist-->
 
 
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->

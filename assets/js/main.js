@@ -639,6 +639,57 @@ $(document).ready(function() {
             }
         ]
     });
+
+    //miniCart
+    $(".cart-icon").on("click", function() {
+        $(".miniCart-navigation").addClass('active-miniCart')
+    });
+    $(".miniCart-close__nav").on("click", function() {
+        $(".miniCart-navigation").removeClass('active-miniCart')
+    });
+    $(document).mouseup(function(e) {
+
+        var container = $(".miniCart-navigation");
+
+        if ($(e.target).closest(".miniCart-wrapper").length === 0) {
+
+            container.removeClass("active-miniCart");
+
+        }
+    });
+    $(".addtobag-btn").on("click", function() {
+        $(".miniCart-navigation").addClass('active-miniCart')
+    });
+    $(".miniCart-close__nav").on("click", function() {
+        $(".miniCart-navigation").removeClass('active-miniCart')
+    });
+    $(document).mouseup(function(e) {
+
+        var container = $(".miniCart-navigation");
+
+        if ($(e.target).closest(".miniCart-wrapper").length === 0) {
+
+            container.removeClass("active-miniCart");
+
+        }
+    });
+    //miniWishlist
+    $(".wishlist-icon").on("click", function() {
+        $(".miniWishlist-navigation").addClass('active-miniWishlist')
+    });
+    $(".miniWishlist-close__nav").on("click", function() {
+        $(".miniWishlist-navigation").removeClass('active-miniWishlist')
+    });
+    $(document).mouseup(function(e) {
+
+        var container = $(".miniWishlist-navigation");
+
+        if ($(e.target).closest(".miniWishlist-wrapper").length === 0) {
+
+            container.removeClass("active-miniWishlist");
+
+        }
+    });
     //active shipping-tabs
     // $(".shipping-tabs-wrapper").on("click", function() {
     //     $(this).addClass("active").parent().siblings().child().removeClass("active")
