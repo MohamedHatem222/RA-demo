@@ -13,10 +13,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.modal {
-    height: 100%;
-}
-
 .slick-slide {
     outline: none;
 }
