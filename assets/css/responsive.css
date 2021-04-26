@@ -371,7 +371,6 @@
         visibility: hidden;
         transform: scaleY(0);
         overflow: hidden;
-        pointer-events: none;
         transform-origin: 0 0 0;
     }
     .second-level-cat.active {

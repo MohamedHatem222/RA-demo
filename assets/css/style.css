@@ -32,6 +32,22 @@ a {
 
 /*end zoomholder slider*/
 
+@keyframes icons-hover {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.icons-hover:hover {
+    animation: icons-hover 2s infinite;
+}
+
 a:hover {
     color: #22aea5 !important;
 }
@@ -237,6 +253,14 @@ body {
     text-decoration: underline;
 }
 
+.header-top .lang_top-menu a {
+    transition: all ease .5s;
+}
+
+.header-top .lang_top-menu a:hover {
+    transform: scale(1.1);
+}
+
 
 /*header-bottom*/
 
@@ -382,6 +406,7 @@ header .navbar {
 .header .header-bottom-icons ul li {
     margin-right: 2rem;
     max-width: 20px;
+    transition: all ease .5s;
 }
 
 .header .header-bottom-icons>ul>li>a {
@@ -696,6 +721,7 @@ footer ul li a.footer-link {
 .footer-icons ul li {
     margin-right: 32px;
     font-size: 18px;
+    transition: all ease .5s;
 }
 
 .footer-bottom-icons ul li {
@@ -1117,6 +1143,7 @@ figure.containerZoom.active {
 
 .inner-product-name h3 {
     color: #404041;
+    font-size: 24px;
 }
 
 .vat {
@@ -1125,6 +1152,10 @@ figure.containerZoom.active {
 
 .inner-product-code {
     color: #404041;
+}
+
+.inner-product-code p {
+    font-size: 15px;
 }
 
 .inner-product-details {
@@ -1142,7 +1173,11 @@ figure.containerZoom.active {
 }
 
 .product-page .product-price {
-    font-size: 20px;
+    font-size: 17px;
+}
+
+.product-page .product-del-price {
+    font-size: 17px;
 }
 
 .availability {
@@ -1156,6 +1191,11 @@ figure.containerZoom.active {
 
 .add-review-button a {
     font-size: 13px;
+    cursor: pointer;
+}
+
+.add-review-button a:hover {
+    text-decoration: underline !important;
 }
 
 .view-review {
@@ -1214,8 +1254,9 @@ figure.containerZoom.active {
 
 .sizechart-button a {
     font-size: 13px;
-    text-decoration: underline;
-    color: #22aea5;
+    text-decoration: underline !important;
+    color: #22aea5 !important;
+    cursor: pointer;
 }
 
 .inner-product-color {
@@ -1413,6 +1454,10 @@ figure.containerZoom.active {
 }
 
 .review-wrapper .review-rate i {
+    cursor: pointer;
+}
+
+.rating-inner i {
     cursor: pointer;
 }
 
