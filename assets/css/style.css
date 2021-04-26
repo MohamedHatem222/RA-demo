@@ -3235,7 +3235,7 @@ input:checked+.defaultslider:before {
     position: fixed;
     right: 0;
     top: 0;
-    bottom: ;
+    bottom: 0;
     background-color: #fff;
     width: 420px;
     padding: 20px 15px 0;
