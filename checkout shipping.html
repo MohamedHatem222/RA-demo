@@ -801,25 +801,26 @@
                         </div>
                         <h5 class="m-0">Shipping</h5>
                     </div>
-                    <div class="shipping-address d-flex flex-wrap align-items-center justify-content-between pb-2">
-                        <div class="choose-address d-flex align-items-center">
-                            <p class="m-0">Choose Your Delivery Address</p>
-                            <a href="#" class="see-all">See All</a>
+                    <div class="shipping-address-wrapper">
+                        <div class="shipping-address d-flex flex-wrap align-items-center justify-content-between pb-2">
+                            <div class="choose-address d-flex align-items-center">
+                                <p class="m-0">Choose Your Delivery Address</p>
+                                <a href="#" class="see-all">See All</a>
+                            </div>
+                            <div class="shipping-add-address">
+                                <a href="#" data-toggle="modal" data-target="#addAddress">
+                                    <i class="fas fa-plus-circle pr-1"></i> Add New Address
+                                </a>
+                            </div>
                         </div>
-                        <div class="shipping-add-address">
-                            <a href="#" data-toggle="modal" data-target="#addAddress">
-                                <i class="fas fa-plus-circle pr-1"></i> Add New Address
-                            </a>
-                        </div>
-                    </div>
-                    <div class="shipping-addresses">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mb-2 px-1">
-                                    <div class="shipping-address-wrapper">
-                                        <div class="shipping-addresses-inner d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="custom-label" for="shippingRadios1">
+                        <div class="shipping-addresses">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mb-2 px-1">
+                                        <div class="shipping-address-wrapper">
+                                            <div class="shipping-addresses-inner d-flex justify-content-between">
+                                                <div class="form-check">
+                                                    <label class="custom-label" for="shippingRadios1">
                                                     <p class="payment-slidertown m-1">Cairo</p>
                                                     <p class="payment-slidername m-1">Walid Ahmed</p>
                                                     <p class="payment-slideraddress m-1">Downtown</p>
@@ -827,22 +828,22 @@
                                                     <input type="radio" name="payment-sliderRadios" id="shippingRadios1" value="option1" checked>
                                                     <span class="checkmark"></span>
                                                 </label>
+                                                </div>
+                                                <div class="payment-edit-icon">
+                                                    <i class="fas fa-edit"></i>
+                                                </div>
                                             </div>
-                                            <div class="payment-edit-icon">
-                                                <i class="fas fa-edit"></i>
+                                            <div class="payment-default-address d-flex align-items-center">
+                                                <i class="fas fa-home pr-1"></i>
+                                                <p class="m-0">This Is My Default Address</p>
                                             </div>
-                                        </div>
-                                        <div class="payment-default-address d-flex align-items-center">
-                                            <i class="fas fa-home pr-1"></i>
-                                            <p class="m-0">This Is My Default Address</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mb-2 px-1">
-                                    <div class="shipping-address-wrapper">
-                                        <div class="shipping-addresses-inner d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="custom-label" for="shippingRadios2">
+                                    <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mb-2 px-1">
+                                        <div class="shipping-address-wrapper">
+                                            <div class="shipping-addresses-inner d-flex justify-content-between">
+                                                <div class="form-check">
+                                                    <label class="custom-label" for="shippingRadios2">
                                                     <p class="payment-slidertown m-1">Giza</p>
                                                     <p class="payment-slidername m-1">Walid Ahmed</p>
                                                     <p class="payment-slideraddress m-1">Downtown</p>
@@ -850,22 +851,22 @@
                                                     <input type="radio" name="payment-sliderRadios" id="shippingRadios2" value="option2">
                                                     <span class="checkmark"></span>
                                                 </label>
+                                                </div>
+                                                <div class="payment-edit-icon">
+                                                    <i class="fas fa-edit"></i>
+                                                </div>
                                             </div>
-                                            <div class="payment-edit-icon">
-                                                <i class="fas fa-edit"></i>
+                                            <div class="payment-default-address d-flex align-items-center">
+                                                <i class="fas fa-home pr-1"></i>
+                                                <p class="m-0">This Is My Default Address</p>
                                             </div>
-                                        </div>
-                                        <div class="payment-default-address d-flex align-items-center">
-                                            <i class="fas fa-home pr-1"></i>
-                                            <p class="m-0">This Is My Default Address</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mb-2 px-1">
-                                    <div class="shipping-address-wrapper">
-                                        <div class="shipping-addresses-inner d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="custom-label" for="shippingRadios3">
+                                    <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mb-2 px-1">
+                                        <div class="shipping-address-wrapper">
+                                            <div class="shipping-addresses-inner d-flex justify-content-between">
+                                                <div class="form-check">
+                                                    <label class="custom-label" for="shippingRadios3">
                                                     <p class="payment-slidertown m-1">October</p>
                                                     <p class="payment-slidername m-1">Walid Ahmed</p>
                                                     <p class="payment-slideraddress m-1">Downtown</p>
@@ -873,22 +874,22 @@
                                                     <input type="radio" name="payment-sliderRadios" id="shippingRadios3" value="option3">
                                                     <span class="checkmark"></span>
                                                 </label>
+                                                </div>
+                                                <div class="payment-edit-icon">
+                                                    <i class="fas fa-edit"></i>
+                                                </div>
                                             </div>
-                                            <div class="payment-edit-icon">
-                                                <i class="fas fa-edit"></i>
+                                            <div class="payment-default-address d-flex align-items-center">
+                                                <i class="fas fa-home pr-1"></i>
+                                                <p class="m-0">This Is My Default Address</p>
                                             </div>
-                                        </div>
-                                        <div class="payment-default-address d-flex align-items-center">
-                                            <i class="fas fa-home pr-1"></i>
-                                            <p class="m-0">This Is My Default Address</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mb-2 px-1">
-                                    <div class="shipping-address-wrapper">
-                                        <div class="shipping-addresses-inner d-flex justify-content-between">
-                                            <div class="form-check">
-                                                <label class="custom-label" for="shippingRadios4">
+                                    <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12 mb-2 px-1">
+                                        <div class="shipping-address-wrapper">
+                                            <div class="shipping-addresses-inner d-flex justify-content-between">
+                                                <div class="form-check">
+                                                    <label class="custom-label" for="shippingRadios4">
                                                     <p class="payment-slidertown m-1">Maadi</p>
                                                     <p class="payment-slidername m-1">Walid Ahmed</p>
                                                     <p class="payment-slideraddress m-1">Downtown</p>
@@ -896,29 +897,97 @@
                                                     <input type="radio" name="payment-sliderRadios" id="shippingRadios4" value="option4">
                                                     <span class="checkmark"></span>
                                                 </label>
+                                                </div>
+                                                <div class="payment-edit-icon">
+                                                    <i class="fas fa-edit"></i>
+                                                </div>
                                             </div>
-                                            <div class="payment-edit-icon">
-                                                <i class="fas fa-edit"></i>
+                                            <div class="payment-default-address d-flex align-items-center">
+                                                <i class="fas fa-home pr-1"></i>
+                                                <p class="m-0">This Is My Default Address</p>
                                             </div>
-                                        </div>
-                                        <div class="payment-default-address d-flex align-items-center">
-                                            <i class="fas fa-home pr-1"></i>
-                                            <p class="m-0">This Is My Default Address</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="confirm-shipping d-flex justify-content-between align-items-center pt-2">
-                        <div class="return d-flex align-items-center font-weight-bold">
-                            <i class="fas fa-angle-double-left"></i>
-                            <a href="mybag.html">Return To Bag</a>
-                        </div>
-                        <div class="continue-payment">
-                            <a href="checkout payment.html" class="btn btn-primary">Next
+                        <div class="confirm-shipping d-flex justify-content-between align-items-center pt-2">
+                            <div class="return d-flex align-items-center font-weight-bold">
+                                <i class="fas fa-angle-double-left"></i>
+                                <a href="mybag.html">Return To Bag</a>
+                            </div>
+                            <div class="continue-payment">
+                                <a href="checkout payment.html" class="btn btn-primary">Next
                                 <i class="fas fa-angle-double-right pl-2"></i>
                             </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shipping-address-form">
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="back-address">
+                                    <i class="fas fa-chevron-left"></i> Add New Address
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <div id="map" class="w-100 mt-3"></div>
+                            </div>
+                            <div class="col-12">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <input type="text" class="form-control" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputAddAddress" placeholder="Address Name (Home,Work,Etc,...)">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputAddAddress2" placeholder="Street Name">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <select id="inputState" class="form-control">
+                                            <option selected>Zone</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <select id="inputState" class="form-control">
+                                            <option selected>District</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Mobile">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Postal Code">
+                                    </div>
+                                    <div class="addAddress-btns d-flex align-items-center justify-content-between">
+                                        <div class="switch-btn d-flex align-items-center">
+                                            <span class="pr-2">Save As Default</span>
+                                            <label class="switch m-0">
+                                            <input type="checkbox">
+                                            <span class="defaultslider round"></span>
+                                        </label>
+                                        </div>
+                                        <div class="submit-btn">
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1048,7 +1117,7 @@
     <!--end payment-->
     <!--start add address modal-->
     <!--start address modal-->
-    <div class="modal fade" id="addAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="addAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1120,7 +1189,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--end add address modal-->
     <!--start footer-->
     <footer class="mt-4">

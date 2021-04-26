@@ -2519,6 +2519,7 @@ input:checked+.defaultslider:before {
 
 .shipping-address-title h5 {
     color: #404041;
+    font-weight: 600;
 }
 
 .wizard .default-address-button .btn {
@@ -2600,6 +2601,47 @@ input:checked+.defaultslider:before {
 
 .wizard .orders-btn {
     border-bottom-right-radius: 20px !important;
+}
+
+.back-address {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.back-address:hover {
+    color: #22aea5 !important;
+    text-decoration: underline !important;
+}
+
+.back-address i {
+    font-size: 13px;
+    padding-right: 3px;
+    color: #22aea5;
+}
+
+.wizard .shipping-address-form {
+    display: none;
+}
+
+.shipping .shipping-address-form {
+    display: none;
+}
+
+.wizard .shipping-address-form.active {
+    display: block;
+}
+
+.shipping .shipping-address-form.active {
+    display: block;
+}
+
+.wizard .shipping-address-wrapper.active {
+    display: none;
+}
+
+.shipping .shipping-address-wrapper.active {
+    display: none;
 }
 
 

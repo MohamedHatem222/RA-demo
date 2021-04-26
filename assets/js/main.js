@@ -691,6 +691,26 @@ $(document).ready(function() {
 
         }
     });
+    //add new address in profile page
+    $(".default-address-button a").on("click", function() {
+        $(".wizard .shipping-address-form").addClass("active");
+        $(".wizard .shipping-address-wrapper").addClass("active");
+    });
+    $(".back-address").on("click", function() {
+        $(".wizard .shipping-address-form").removeClass("active");
+        $(".wizard .shipping-address-wrapper").removeClass("active");
+    });
+
+    //add new address in shipping page
+    $(".shipping-add-address a").on("click", function() {
+        $(".shipping .shipping-address-form").addClass("active");
+        $(".shipping .shipping-address-wrapper").addClass("active");
+    });
+    $(".back-address").on("click", function() {
+        $(".shipping .shipping-address-form").removeClass("active");
+        $(".shipping .shipping-address-wrapper").removeClass("active");
+    });
+
     //active shipping-tabs
     // $(".shipping-tabs-wrapper").on("click", function() {
     //     $(this).addClass("active").parent().siblings().child().removeClass("active")
