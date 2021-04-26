@@ -199,6 +199,30 @@ body {
 }
 
 
+/*Start Scroll Bar*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border: 7px solid #fff;
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(34, 174, 165, 0.5);
+    border-radius: 5px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgba(34, 174, 165, 1);
+}
+
+
+/*End Scroll Bar*/
+
+
 /*start header*/
 
 
