@@ -710,6 +710,20 @@ $(document).ready(function() {
         $(".shipping .shipping-address-form").removeClass("active");
         $(".shipping .shipping-address-wrapper").removeClass("active");
     });
+    //mini-profile-popup
+    $(".profile-icon img").on("click", function() {
+        $(".mini-profile-popup").addClass("active")
+    });
+    $(document).mouseup(function(e) {
+
+        var container = $(".mini-profile-popup");
+
+        if ($(e.target).closest(".mini-profile-popup").length === 0) {
+
+            container.removeClass("active");
+
+        }
+    });
 
     //active shipping-tabs
     // $(".shipping-tabs-wrapper").on("click", function() {
