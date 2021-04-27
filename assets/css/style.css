@@ -1658,20 +1658,21 @@ figure.containerZoom.active {
     width: 100%;
     height: auto;
     position: relative;
-    overflow: visible !important;
+    overflow: hidden;
 }
 
-.zoomHolder img {
+
+/* .zoomHolder img {
     cursor: zoom-in !important;
     position: absolute;
     top: 32% !important;
-}
+} */
 
 .small-screen-slider .inner-product-image {
     border: 1px solid #DEDEDE;
     width: 100%;
-    height: 310px;
-    background-color: #ECEDEF;
+    /* height: 310px;
+    background-color: #ECEDEF; */
     position: relative;
 }
 
@@ -3381,7 +3382,7 @@ input:checked+.defaultslider:before {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 30px 30px;
+    padding: 0 30px 10px;
 }
 
 
@@ -3558,7 +3559,7 @@ input:checked+.defaultslider:before {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 30px 30px;
+    padding: 0 30px 10px;
 }
 
 
