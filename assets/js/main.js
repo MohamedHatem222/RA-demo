@@ -691,6 +691,23 @@ $(document).ready(function() {
 
         }
     });
+    $(".wishlist-btn").on("click", function(e) {
+        e.stopPropagation
+        $(".miniWishlist-navigation").addClass('active-miniWishlist')
+    });
+    $(".miniWishlist-close__nav").on("click", function() {
+        $(".miniWishlist-navigation").removeClass('active-miniWishlist')
+    });
+    $(document).mouseup(function(e) {
+
+        var container = $(".miniWishlist-navigation");
+
+        if ($(e.target).closest(".miniWishlist-wrapper").length === 0) {
+
+            container.removeClass("active-miniWishlist");
+
+        }
+    });
     //add new address in profile page
     $(".default-address-button a").on("click", function() {
         $(".wizard .shipping-address-form").addClass("active");

@@ -890,7 +890,7 @@ footer ul li a.footer-link {
 }
 
 .grid-filter-popup .sub-category-holder .sub-category {
-    border: 1px solid #000;
+    border: 1px solid #404041;
     width: 85px;
     margin-right: 10px;
     margin-bottom: 7px;
@@ -898,16 +898,17 @@ footer ul li a.footer-link {
 }
 
 .grid-filter-popup .sub-category-holder .sub-category a {
-    color: #000;
+    color: #404041;
     text-decoration: none;
     text-align: center;
     font-weight: 400;
     padding: 4px 0;
     display: block;
+    cursor: pointer;
 }
 
 .grid-filter-popup .color-wrapper .sub-color {
-    border: 1px solid #000;
+    border: 1px solid #404041;
     width: 30px;
     height: 30px;
     margin-right: 18px;
@@ -916,12 +917,13 @@ footer ul li a.footer-link {
 }
 
 .grid-filter-popup .color-wrapper .sub-color a {
-    color: #000;
+    color: #404041;
     text-decoration: none;
     text-align: center;
     font-weight: 400;
     padding: 4px 0;
     display: block;
+    cursor: pointer;
 }
 
 .filter-popup-btns {
@@ -3316,7 +3318,7 @@ input:checked+.defaultslider:before {
 }
 
 .miniCart-parent {
-    max-height: calc(100vh - 270px);
+    max-height: calc(100vh - 250px);
     overflow-y: auto;
 }
 
@@ -3493,7 +3495,7 @@ input:checked+.defaultslider:before {
 }
 
 .miniWishlist-parent {
-    max-height: calc(100vh - 270px);
+    max-height: calc(100vh - 250px);
     overflow-y: auto;
 }
 
