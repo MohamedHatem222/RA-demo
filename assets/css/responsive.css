@@ -127,6 +127,10 @@
     .view-review {
         margin-left: 0;
     }
+    .click-order-btn i {
+        position: absolute;
+        left: 10px;
+    }
 }
 
 @media (max-width:1400px) and (min-width:992px) {
@@ -451,6 +455,11 @@
     .small-screen-slider {
         display: none;
     }
+    .product-img-sticky {
+        position: sticky;
+        top: 65px;
+        height: 100%;
+    }
 }
 
 @media (min-width:767px) {
@@ -552,6 +561,9 @@
         width: 100%;
         min-height: 383px;
         margin-bottom: 1rem;
+    }
+    .timberland-brand .collection-img.top-img {
+        padding-bottom: .5rem;
     }
 }
 

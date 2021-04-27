@@ -2639,6 +2639,7 @@ input:checked+.defaultslider:before {
 .wizard .wizard-feedback h5 {
     font-weight: 600;
     color: #404041;
+    font-size: 18px;
 }
 
 .wizard .wizard-feedback p {

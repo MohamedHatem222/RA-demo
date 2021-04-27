@@ -724,9 +724,17 @@ $(document).ready(function() {
 
         }
     });
-
+    //active size
+    $(".inner-product-size ul li").on("click", function() {
+        $(this).addClass("active").siblings().removeClass("active")
+    });
+    //active color
+    $(".inner-product-color ul li").on("click", function() {
+        $(this).addClass("active").siblings().removeClass("active")
+    });
     //active shipping-tabs
-    // $(".shipping-tabs-wrapper").on("click", function() {
-    //     $(this).addClass("active").parent().siblings().child().removeClass("active")
-    // });
+    $(".shipping-tabs-wrapper").on("click", function() {
+        $(this).addClass("active").parent().siblings().find(".shipping-tabs-wrapper").removeClass("active")
+    });
+
 });
