@@ -907,7 +907,7 @@ footer ul li a.footer-link {
     cursor: pointer;
 }
 
-.grid-filter-popup .color-wrapper .sub-color {
+.grid-filter-popup .listing-color-wrapper .sub-color {
     border: 1px solid #404041;
     width: 30px;
     height: 30px;
@@ -916,7 +916,7 @@ footer ul li a.footer-link {
     text-align: center;
 }
 
-.grid-filter-popup .color-wrapper .sub-color a {
+.grid-filter-popup .listing-color-wrapper .sub-color a {
     color: #404041;
     text-decoration: none;
     text-align: center;

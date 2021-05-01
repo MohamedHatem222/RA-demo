@@ -520,11 +520,13 @@
     .color-wrapper {
         display: flex;
         align-items: center;
+        justify-content: center;
         padding: 5px 0;
     }
     .size-wrapper {
         display: flex;
         align-items: center;
+        justify-content: center;
         padding: 5px 0;
     }
     .color-value {
@@ -565,6 +567,12 @@
     }
     .category-bg {
         opacity: 1;
+    }
+    .basket-product-color {
+        margin-bottom: 0 !important;
+    }
+    .basket-product-size {
+        margin-bottom: 0 !important;
     }
 }
 
