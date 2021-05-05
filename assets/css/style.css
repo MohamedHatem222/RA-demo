@@ -402,7 +402,7 @@ header .navbar {
 } */
 
 .header .header-bottom-icons ul li {
-    margin-right: 2rem;
+    margin-left: 2rem;
     max-width: 20px;
     transition: all ease .5s;
     position: relative;

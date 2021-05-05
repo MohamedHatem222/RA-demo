@@ -149,6 +149,9 @@
 }
 
 @media (min-width:992px) {
+    .header-bottom .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
     .sub-menu-row {
         width: 100%;
     }
