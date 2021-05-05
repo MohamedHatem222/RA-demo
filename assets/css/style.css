@@ -202,6 +202,12 @@ body {
 
 /*start header*/
 
+
+/* .menu-img-col {
+    display: flex;
+    justify-content: flex-end;
+} */
+
 .header-top {
     background-color: #22aea5;
     height: 30px;

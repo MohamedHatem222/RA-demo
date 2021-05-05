@@ -77,6 +77,15 @@
     }
 }
 
+@media (max-width:1400px) {
+    .menu-img-col {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 @media (max-width:1024px) {
     .navbar .nav-item {
         padding-right: 1rem !important;
