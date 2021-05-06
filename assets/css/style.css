@@ -1787,8 +1787,13 @@ section.inner-product-slider {
     position: relative;
 }
 
+.delivery-price {
+    color: #22aea5 !important;
+    font-weight: 500;
+}
+
 .shipping-tabs-wrapper {
-    padding: 13px 10px;
+    padding: 13px 30px;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
     color: #404041;
     cursor: pointer;
@@ -2112,6 +2117,12 @@ section.inner-product-slider {
 
 .payment-product-inner:last-of-type {
     border: none;
+}
+
+.shipping-address-wrapper .shipping-delivery-title {
+    color: #22aea5;
+    font-weight: 500;
+    padding-left: 3px;
 }
 
 .shipping-addresses .shipping-address-wrapper {
@@ -3210,7 +3221,7 @@ input:checked+.defaultslider:before {
     padding-left: 0.25rem;
 }
 
-.collect-wrapper #map {
+.click_collect-wrapper #map {
     width: 100%;
     min-height: 100%;
     margin-bottom: 1rem;

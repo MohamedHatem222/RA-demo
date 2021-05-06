@@ -780,7 +780,7 @@
                     <ol class="list-unstyled d-flex flex-wrap m-0">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a href="mybag.html">My Basket</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Shipping</li>
+                        <li class="breadcrumb-item active" aria-current="page">Checkout</li>
                     </ol>
                 </div>
             </div>
@@ -791,87 +791,81 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-7 col-12 mb-4">
-                <div class="shipping-tabs">
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <a href="click & collect.html" class="shipping-tabs-wrapper active d-block text-center">
-                                <p class="m-0 d-block">Click & Collect</p>
-                                <span class="d-block">Collect Your Order From a store Of Your Choice</span>
-                            </a>
+                <div class="shipping active-shipping">
+                    <div class="shipping-title d-flex align-items-center pb-2">
+                        <div class="shipping-check">
+                            <i class="fas fa-check"></i>
                         </div>
-                        <div class="col-md-6 col-12">
-                            <a href="checkout shipping.html" class="shipping-tabs-wrapper d-block text-center">
-                                <p class="m-0 d-block">Home Delivery</p>
-                                <span class="d-block">Get Your Product Delivered To Your Home</span>
-                            </a>
-                        </div>
+                        <h5 class="m-0">Shipping</h5>
                     </div>
-                </div>
-                <div class="collect-wrapper">
-                    <p class="select-store m-0">Select Your Collection Store</p>
-                    <p class="use-map m-0">Use our map view to find your nearst store</p>
                     <div class="container mt-4">
-                        <div class="row">
-                            <div class="col-md-6 col-12 px-1">
-                                <div class="click-addresses-inner mb-1">
-                                    <div class="form-check">
-                                        <label class="custom-label" for="clickRadios1">
+                        <p class="delivery-price mb-0 pb-2">Click & Collect</p>
+                        <p class="use-map m-0">Select Your Collection Store</p>
+                        <div class="click_collect-wrapper">
+                            <div class="container mt-4">
+                                <div class="row">
+                                    <div class="col-md-6 col-12 px-1">
+                                        <div class="click-addresses-inner mb-1">
+                                            <div class="form-check">
+                                                <label class="custom-label" for="clickRadios1">
                                             <p class="click-town m-1">Gameat el dewal branch</p>
                                             <p class="click-address m-1">Gameat elDewal St..,next to Zamaled club Gate 1</p>
                                             <p class="click-number m-1">16312</p>
                                             <input type="radio" name="payment-sliderRadios" id="clickRadios1" value="option1" checked>
                                             <span class="checkmark"></span>
                                         </label>
-                                    </div>
-                                </div>
-                                <div class="click-addresses-inner mb-1">
-                                    <div class="form-check">
-                                        <label class="custom-label" for="clickRadios2">
+                                            </div>
+                                        </div>
+                                        <div class="click-addresses-inner mb-1">
+                                            <div class="form-check">
+                                                <label class="custom-label" for="clickRadios2">
                                             <p class="click-town m-1">Gameat el dewal branch</p>
                                             <p class="click-address m-1">Gameat elDewal St..,next to Zamaled club Gate 1</p>
                                             <p class="click-number m-1">16312</p>
                                             <input type="radio" name="payment-sliderRadios" id="clickRadios2" value="option2">
                                             <span class="checkmark"></span>
                                         </label>
-                                    </div>
-                                </div>
-                                <div class="click-addresses-inner mb-1">
-                                    <div class="form-check">
-                                        <label class="custom-label" for="clickRadios3">
+                                            </div>
+                                        </div>
+                                        <div class="click-addresses-inner mb-1">
+                                            <div class="form-check">
+                                                <label class="custom-label" for="clickRadios3">
                                             <p class="click-town m-1">Gameat el dewal branch</p>
                                             <p class="click-address m-1">Gameat elDewal St..,next to Zamaled club Gate 1</p>
                                             <p class="click-number m-1">16312</p>
                                             <input type="radio" name="payment-sliderRadios" id="clickRadios3" value="option3">
                                             <span class="checkmark"></span>
                                         </label>
-                                    </div>
-                                </div>
-                                <div class="click-addresses-inner mb-1">
-                                    <div class="form-check">
-                                        <label class="custom-label" for="clickRadios4">
+                                            </div>
+                                        </div>
+                                        <div class="click-addresses-inner mb-1">
+                                            <div class="form-check">
+                                                <label class="custom-label" for="clickRadios4">
                                             <p class="click-town m-1">Gameat el dewal branch</p>
                                             <p class="click-address m-1">Gameat elDewal St..,next to Zamaled club Gate 1</p>
                                             <p class="click-number m-1">16312</p>
                                             <input type="radio" name="payment-sliderRadios" id="clickRadios4" value="option4">
                                             <span class="checkmark"></span>
                                         </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12 px-1">
+                                        <div id="map" class="w-100"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12 px-1">
-                                <div id="map" class="w-100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="confirm-shipping d-flex justify-content-between align-items-center pt-4">
-                        <div class="return d-flex align-items-center font-weight-bold">
-                            <i class="fas fa-angle-double-left"></i>
-                            <a href="mybag.html">Return To Bag</a>
-                        </div>
-                        <div class="continue-payment">
-                            <a href="checkout payment.html" class="btn btn-primary">Next
+                            <div class="confirm-shipping d-flex justify-content-between align-items-center pt-4">
+                                <div class="return d-flex align-items-center font-weight-bold">
+                                    <i class="fas fa-angle-double-left"></i>
+                                    <a href="collect or deliver.html">Return To Shipping Options</a>
+                                </div>
+                                <div class="continue-payment">
+                                    <a href="checkout payment.html" class="btn btn-primary">Next
                                 <i class="fas fa-angle-double-right pl-2"></i>
                             </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1327,7 +1321,7 @@
                     </div>
                     <div class="miniCart-btns">
                         <a href="mybag.html" class="btn btn-primary btn-block">View Your Basket</a>
-                        <a href="checkout shipping.html" class="btn btn-secondary btn-block">checkout</a>
+                        <a href="collect or deliver.html" class="btn btn-secondary btn-block">checkout</a>
                     </div>
                 </div>
 
