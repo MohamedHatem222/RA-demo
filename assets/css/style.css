@@ -664,6 +664,18 @@ header .modal.show .modal-dialog {
     padding: 50px 0;
 }
 
+.footer-col {
+    position: relative;
+}
+
+.footer-col .collapse-icon {
+    display: none;
+}
+
+.footer-col li {
+    line-height: 1.8rem;
+}
+
 .footer-bottom {
     background-color: #606060;
     color: #FFF;

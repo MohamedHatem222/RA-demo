@@ -753,5 +753,12 @@ $(document).ready(function() {
     $(".shipping-tabs-wrapper").on("click", function() {
         $(this).addClass("active").parent().siblings().find(".shipping-tabs-wrapper").removeClass("active")
     });
+    //footer collapsed
+    var w = $(window).width();
+    if (w > 578) {
+        if ($(".collapseds").length > 0) {
+            $(".collapseds").attr("data-toggle", ' ')
+        }
+    }
 
 });
