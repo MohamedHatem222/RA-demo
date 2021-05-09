@@ -605,6 +605,7 @@
     }
     .header .header-bottom-icons>ul>li {
         margin-right: 1.1rem;
+        margin-left: unset;
     }
     .header-top .close-header-top {
         position: absolute;
