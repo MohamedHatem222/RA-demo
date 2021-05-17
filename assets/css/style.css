@@ -120,7 +120,7 @@ body {
 
 .mini-profile-popup {
     position: absolute;
-    top: 45px;
+    top: 53px;
     left: 50%;
     transform: translateX(-50%);
     width: 175px;
@@ -3235,7 +3235,7 @@ input:checked+.defaultslider:before {
 
 .click_collect-wrapper #map {
     width: 100%;
-    min-height: 100%;
+    min-height: 280px;
     margin-bottom: 1rem;
 }
 
@@ -3799,3 +3799,13 @@ input:checked+.defaultslider:before {
 
 
 /*******************start custom forms*************************/
+
+
+/* .inner-product-name h3 {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+} */

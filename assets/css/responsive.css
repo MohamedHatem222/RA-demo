@@ -452,6 +452,10 @@
     .filter-popup-btns {
         justify-content: center;
     }
+    .mini-profile-popup {
+        position: absolute;
+        top: 41px;
+    }
 }
 
 @media (max-width:768px) {
@@ -586,6 +590,14 @@
     .basket-product-size {
         margin-bottom: 0 !important;
     }
+    .click_collect-wrapper #map {
+        width: 100%;
+        min-height: 280px;
+        margin-bottom: 1rem;
+    }
+    .click-addresses-inner .form-check {
+        padding-left: 0;
+    }
 }
 
 @media (max-width:650px) {
@@ -718,6 +730,9 @@
     .switch-btn {
         padding-bottom: 10px;
     }
+    .confirm-shipping .return {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width:400px) {
@@ -768,6 +783,10 @@
     .payment .checkmark {
         position: absolute;
         top: 10px;
+    }
+    .mini-profile-popup {
+        position: absolute;
+        top: 37px;
     }
 }
 
@@ -863,5 +882,9 @@
     .payment .checkmark {
         position: absolute;
         top: 8px;
+    }
+    .mini-profile-popup {
+        position: absolute;
+        top: 36px;
     }
 }

@@ -760,5 +760,50 @@ $(document).ready(function() {
             $(".collapseds").attr("data-toggle", ' ')
         }
     }
+    // $("html").on("contextmenu", function(e) {
+    //     return false;
+    // });
+    /** TO DISABLE SCREEN CAPTURE **/
+    // document.addEventListener('keyup', (e) => {
+    //     if (e.key == 'PrintScreen') {
+    //         navigator.clipboard.writeText('');
+    //         alert('Screenshots disabled!');
+    //     }
+    // });
+
+    /** TO DISABLE PRINTS WHIT CTRL+P **/
+    // document.addEventListener('keydown', (e) => {
+    //     if (e.ctrlKey && e.key == 'p') {
+    //         alert('This section is not allowed to print or export to PDF');
+    //         e.cancelBubble = true;
+    //         e.preventDefault();
+    //         e.stopImmediatePropagation();
+    //     }
+    // });
+
+    const copyToClipboard = () => {
+        var textToCopy = "Print screen disabled";
+        navigator.clipboard.writeText(textToCopy);
+    }
+
+    $(window).keyup((e) => {
+        if (e.keyCode == 44) {
+            setTimeout(
+                copyToClipboard(),
+                1000
+            );
+        }
+    });
+    //change img in hover
+    // $('.product-card').mouseenter(function() {
+    //     $(this.children).siblings('.product-img-wrapper').find('img').attr('src', './assets/images/shoe1.jpg');
+    //     $(this.children).siblings('.product-img-wrapper').find('img').css({
+    //         'opacity': '1',
+    //         'pointer-event': 'all'
+    //     });
+    // });
+    // $('.product-card').mouseleave(function() {
+    //     $(this.children).siblings('.product-img-wrapper').find('img').attr('src', './assets/images/adidas3.png')
+    // });
 
 });
