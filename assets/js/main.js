@@ -133,8 +133,8 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 2000,
+        autoplaySpeed: 2000,
+        speed: 1500,
         variableWidth: true,
         slidesToShow: 6,
         slidesToScroll: 1,
@@ -486,8 +486,8 @@ $(document).ready(function() {
         dots: true,
         infinite: false,
         autoplay: false,
-        autoplaySpeed: 3000,
-        speed: 2000,
+        autoplaySpeed: 2000,
+        speed: 1500,
         variableWidth: true,
         slidesToShow: 5,
         slidesToScroll: 4,
@@ -781,19 +781,20 @@ $(document).ready(function() {
     //     }
     // });
 
-    const copyToClipboard = () => {
-        var textToCopy = "Print screen disabled";
-        navigator.clipboard.writeText(textToCopy);
-    }
+    //cancel printscreen button
+    // const copyToClipboard = () => {
+    //     var textToCopy = "Print screen disabled";
+    //     navigator.clipboard.writeText(textToCopy);
+    // }
 
-    $(window).keyup((e) => {
-        if (e.keyCode == 44) {
-            setTimeout(
-                copyToClipboard(),
-                1000
-            );
-        }
-    });
+    // $(window).keyup((e) => {
+    //     if (e.keyCode == 44) {
+    //         setTimeout(
+    //             copyToClipboard(),
+    //             1000
+    //         );
+    //     }
+    // });
     //change img in hover
     // $('.product-card').mouseenter(function() {
     //     $(this.children).siblings('.product-img-wrapper').find('img').attr('src', './assets/images/shoe1.jpg');
