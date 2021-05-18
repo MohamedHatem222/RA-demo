@@ -405,6 +405,9 @@ header .navbar {
     margin-left: 2rem;
     max-width: 20px;
     transition: all ease .5s;
+}
+
+.header .header-bottom-icons ul li.profile-icon {
     position: relative;
 }
 
