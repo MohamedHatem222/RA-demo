@@ -766,10 +766,6 @@ footer ul li a.footer-link {
 
 /*******************************************start listing***********************************************/
 
-.body-content {
-    min-height: 19vh;
-}
-
 .breadcrumb-item+.breadcrumb-item::before {
     display: inline-block;
     padding-right: 1rem;
@@ -3798,7 +3794,28 @@ input:checked+.defaultslider:before {
 }
 
 
-/*******************start custom forms*************************/
+/*******************end custom forms*************************/
+
+
+/*********************************************Start Login*************************************************/
+
+.body-content {
+    min-height: 19vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-facebook {
+    margin-top: .5rem;
+}
+
+.login-wrapper {
+    width: 45%;
+}
+
+
+/*********************************************End Login*************************************************/
 
 
 /* .inner-product-name h3 {

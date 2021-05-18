@@ -6,7 +6,7 @@
         margin-left: 166px;
     }
     .body-content {
-        min-height: 46vh;
+        min-height: 44vh;
     }
     .grid-filter-popup .sub-category-holder .sub-category {
         width: 90px;
@@ -66,6 +66,9 @@
     .my-items-wrapper {
         max-height: 31vh;
         overflow-y: auto;
+    }
+    .login-wrapper {
+        width: 40%;
     }
 }
 
@@ -597,6 +600,9 @@
     }
     .click-addresses-inner .form-check {
         padding-left: 0;
+    }
+    .login-wrapper {
+        width: 76%;
     }
 }
 
