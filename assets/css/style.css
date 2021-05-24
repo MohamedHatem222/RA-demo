@@ -1105,6 +1105,10 @@ footer ul li a.footer-link {
     border-color: #22aea5;
 }
 
+.page-item.active .page-link:hover {
+    color: #FFF !important;
+}
+
 .page-link {
     color: #22aea5;
 }
