@@ -16,20 +16,6 @@
         height: 30px;
         margin-right: 20px;
     }
-    .filter-row:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 102%;
-        height: 1px;
-        background-color: #e6e6e6;
-    }
-    .filter-popup-btns {
-        justify-content: flex-end;
-        margin-top: 18px;
-    }
     .right-side-product {
         padding-right: 60px;
     }
@@ -121,12 +107,6 @@
     .filter-popup-btns {
         margin-top: 37px;
     }
-    .filter-row:before {
-        content: "";
-        position: absolute;
-        bottom: -18px;
-        left: 50%;
-    }
     .product-thumbnails {
         position: absolute;
         bottom: 10px;
@@ -157,6 +137,9 @@
 }
 
 @media (min-width:992px) {
+    .product-filter button {
+        display: none;
+    }
     .header-bottom .navbar-expand-lg .navbar-collapse {
         justify-content: center;
     }
@@ -245,6 +228,27 @@
 }
 
 @media (max-width :991px) {
+    .grid-filter-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 3.5rem 1rem;
+        overflow-y: auto;
+        max-height: 102vh;
+        height: 100%;
+        background-color: #FFF;
+        z-index: 1500;
+        transform: translateX(-100%);
+        transition: all ease .5s;
+    }
+    .grid-filter-popup.active {
+        transform: translateX(0);
+    }
+    .product-filter button {
+        display: block;
+        white-space: nowrap;
+    }
     /* .accordion .collapse:not(.show) {
         display: block;
     } */
@@ -434,29 +438,6 @@
     #searchModal .modal-dialog {
         margin: 5.75rem auto !important;
     }
-    .grid-filter-popup {
-        background-color: #FFF;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin-top: 0;
-        padding: 10px 20px;
-        box-shadow: 0 2px 6px 0 rgb(40 40 40 / 10%);
-        z-index: 400;
-        transform: translateX(-141%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all ease 0.5s;
-        z-index: 999999;
-        max-height: 100%;
-        overflow-y: auto;
-    }
-    .grid-filter-popup.active {
-        visibility: visible;
-        opacity: 1;
-        transform: translateX(0);
-    }
     .filter-popup-btns {
         justify-content: center;
     }
@@ -643,9 +624,6 @@
         -ms-flex: 0 0 20%;
         flex: 0 0 20% !important;
     }
-    .showing-results__count {
-        margin-bottom: 15px;
-    }
 }
 
 @media (min-width: 578px) {
@@ -695,6 +673,9 @@
 }
 
 @media (max-width:500px) {
+    .showing-results__count {
+        margin-bottom: 10px;
+    }
     .header-bottom .header-bottom-category {
         -ms-flex: 0 0 11%;
         flex: 0 0 11% !important;
