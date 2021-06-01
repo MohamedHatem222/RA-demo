@@ -961,6 +961,36 @@ footer ul li a.footer-link {
     margin: auto;
 }
 
+.sold-out {
+    background-color: #888888;
+    color: #FFF;
+    width: 100px;
+    padding: 1px 15px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    z-index: 1;
+}
+
+.product-img-wrapper .sold-out {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #888888;
+    color: #FFF;
+    width: 100px;
+    padding: 1px 15px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    z-index: 1;
+}
+
 .listing-wishlist {
     position: absolute;
     top: 10px;
@@ -1235,6 +1265,12 @@ figure.containerZoom.active {
     position: relative;
 }
 
+.inner-product-details .sold-out {
+    position: absolute;
+    right: 5px;
+    top: 65px;
+}
+
 .inner-product-details:before {
     content: "";
     position: absolute;
@@ -1318,6 +1354,14 @@ figure.containerZoom.active {
 
 .inner-product-size ul li.active {
     border: 2px solid #22aea5;
+}
+
+.see-more a {
+    color: #22aea5;
+    padding-top: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 .inner-product-size ul li a {
@@ -2732,6 +2776,36 @@ input:checked+.defaultslider:before {
 
 /*start basket page*/
 
+.basket-product-quantity span {
+    padding-right: 15px;
+    line-height: 41px;
+}
+
+.basket-product-quantity .counter {
+    padding: 6px 8px;
+    margin: auto;
+    border: 1px solid #bbbbbb;
+}
+
+.basket-product-quantity .counter i {
+    background-color: #f6f6f6;
+    padding: 4px;
+    border-radius: 3px;
+    color: #000;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.basket-product-quantity .counter .qty-input {
+    background-color: #f6f6f6;
+    width: 34px;
+    height: 20px;
+    margin: 0 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
 .wishlist-btn .btn {
     background-color: #FFF;
     border: 1px solid #ced4da;
@@ -2790,17 +2864,16 @@ input:checked+.defaultslider:before {
 }
 
 .basket-product-quantity .counter {
-    background-color: #f5f5f5;
-    padding: 10px 18px;
-    border-radius: 20px;
+    border: 1px solid #bbbbbb;
+    padding: 6px 8px;
     margin: auto;
 }
 
 .basket-product-quantity .counter i {
-    background-color: #000;
+    background-color: #f6f6f6;
     padding: 4px;
     border-radius: 3px;
-    color: #fff;
+    color: #000;
     font-size: 11px;
     cursor: pointer;
 }
@@ -2812,7 +2885,7 @@ input:checked+.defaultslider:before {
     text-align: center;
     outline: none;
     border: none;
-    background-color: #f5f5f5;
+    background-color: #f6f6f6;
 }
 
 .basket-product-price span {

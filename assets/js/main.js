@@ -806,5 +806,20 @@ $(document).ready(function() {
     // $('.product-card').mouseleave(function() {
     //     $(this.children).siblings('.product-img-wrapper').find('img').attr('src', './assets/images/adidas3.png')
     // });
-
+ //increase counter
+    $('.counter .fa-plus').on('click', function() {
+        var $qty = $(this).parent().find('.qty-input');
+        var currentVal = parseInt($qty.val());
+        if (!isNaN(currentVal)) {
+            $qty.val(currentVal + 1);
+        }
+    });
+    //decease counter
+    $('.counter .fa-minus').on('click', function() {
+        var $qty = $(this).parent().find('.qty-input');
+        var currentVal = parseInt($qty.val());
+        if (!isNaN(currentVal) && currentVal > 1) {
+            $qty.val(currentVal - 1);
+        }
+    });
 });

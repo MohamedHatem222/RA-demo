@@ -906,4 +906,9 @@
         position: absolute;
         top: 36px;
     }
+    .inner-product-details .sold-out {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
