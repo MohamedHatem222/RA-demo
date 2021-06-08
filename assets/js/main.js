@@ -806,7 +806,7 @@ $(document).ready(function() {
     // $('.product-card').mouseleave(function() {
     //     $(this.children).siblings('.product-img-wrapper').find('img').attr('src', './assets/images/adidas3.png')
     // });
- //increase counter
+    //increase counter
     $('.counter .fa-plus').on('click', function() {
         var $qty = $(this).parent().find('.qty-input');
         var currentVal = parseInt($qty.val());
@@ -821,5 +821,63 @@ $(document).ready(function() {
         if (!isNaN(currentVal) && currentVal > 1) {
             $qty.val(currentVal - 1);
         }
+    });
+
+    //flex slider
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        // rtl: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        infinite: false,
+        focusOnSelect: true,
+        vertical: true,
+        // adaptiveHeight: true,
+
+        responsive: [{
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            }
+        ],
     });
 });

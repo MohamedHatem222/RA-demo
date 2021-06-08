@@ -118,6 +118,13 @@
     .shipping-tabs-wrapper span {
         font-size: 11px;
     }
+    .left-side-product .sub-img .sub {
+        width: 75px !important;
+    }
+    .left-side-product .sub-img .slick-slide {
+        /* width: 71px !important; */
+        max-height: 145px;
+    }
 }
 
 @media (max-width:1023px) and (min-width:768px) {
@@ -452,6 +459,11 @@
         position: sticky;
         top: 135px;
     }
+    .product-img-sticky {
+        position: sticky;
+        top: 100px;
+        height: 100%;
+    }
 }
 
 @media (max-width:768px) {
@@ -466,11 +478,6 @@
 @media (min-width:768px) {
     .small-screen-slider {
         display: none;
-    }
-    .product-img-sticky {
-        position: sticky;
-        top: 65px;
-        height: 100%;
     }
 }
 
