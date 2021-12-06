@@ -1,4 +1,7 @@
 @media (min-width:1650px) {
+    .product-img-wrapper {
+        padding-top: 81%;
+    }
     .container {
         max-width: 1600px;
     }
